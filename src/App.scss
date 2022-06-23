@@ -1,0 +1,54 @@
+@import "./Styles/Variables.scss";
+
+
+.navyColor{
+    Color: $navyblue;
+}
+.lightgreen{
+    background-color: $lightgreen;
+}
+.lightestblue{
+    background-color: $lightestblue;
+}
+.gray_light{
+    background-color: $gray_light;
+}
+.red{
+    color: $red;
+}
+.yellow{
+    color:$yellow;
+}
+.bg_gray{
+    background: $gray;
+}
+.scroll {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 60vh;
+}
+.bg_light{
+    background: $lightgray;
+}
+.gray{
+    color: $gray;
+}
+.font_bold{
+    font-weight: 500;
+}
+.font_bolder{
+    font-weight: 700;
+}
+.bigbutton{
+    background: $navyblue;
+}
+.request button {
+    border: 1px solid black;
+    border-radius: 50rem;
+    font-size: 12px !important;
+    padding: 5px !important;
+}
+.sidebar_profile {
+    border-radius: 10px;
+    overflow: hidden;
+}
