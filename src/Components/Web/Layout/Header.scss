@@ -1,0 +1,50 @@
+@import "../../../Styles/Variables.scss";
+
+.logo{
+    width:9%;
+}
+.brand{
+    flex-wrap: initial !important;
+}
+.desktop_navbar .navbar_block{
+    display: block !important;
+}
+.avatar {
+   
+    display: inline-flex;
+    vertical-align: middle;
+    transition: margin 0.15s;
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.8rem;
+}
+.avatar-img {
+    object-fit: cover;
+    border-radius: 50em;
+}
+.profile_img {
+    display: inline-flex;
+    vertical-align: middle;
+    transition: margin 0.15s;
+    width: 7rem;
+    height: 7rem;
+    font-size: 0.8rem;
+    margin-top: -20%;
+    border: 5px solid gray;
+}
+.profile_img img {
+    object-fit: cover;
+    border-radius: 50em;
+}
+.sidebar_profile {
+    border-radius: 10px;
+    overflow: hidden;
+}
+.dropdown-toggle::after{
+    display: none;
+}
+.recentsearch .modal-dialog{
+    margin: 0;
+    left:13%;
+    top:12%;
+}

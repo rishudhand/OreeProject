@@ -1,0 +1,15 @@
+@import "../../../../Styles/Variables.scss";
+
+.mynetwork .nav-link.active,
+.mynetwork .show > .nav-link {
+  color: $black !important;
+  background: none !important;
+}
+.connection_drop .dropdown-toggle::after {
+  display: none;
+}
+.btn-check:focus + .btn,
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
