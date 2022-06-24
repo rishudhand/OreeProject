@@ -9,9 +9,12 @@ import Lock from "../../../Assets/icon/lock.png";
 import Facebook from "../../../Assets/icon/facebook.png";
 import Google from "../../../Assets/icon/google.png";
 import Apple from "../../../Assets/icon/apple.png";
+import Header from "../../Layout/Header";
+
 export default function Login() {
   return (
     <div>
+      <Header />
       <div
         className="login_banner p-4"
         style={{
@@ -113,7 +116,7 @@ export default function Login() {
                       </div>
                       <p className="text-secondary d-flex justify-content-center align-items-center font_bold">
                         Don’t have any account?
-                        <Link to="/signup" className="text-decoration-none">
+                        <Link to="/investor" className="text-decoration-none">
                           &nbsp;
                           <span className="h6 m-0 p-0 navyColor font_bolder">
                             Sign up

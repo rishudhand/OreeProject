@@ -2,6 +2,7 @@ import React from "react";
 import "./Header.scss";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import Logo from "../../Assets/logo/logo.png";
+import { Link } from "react-router-dom";
 import Login_user from "../../Assets/icon/login.png";
 export default function Header() {
   return (
@@ -19,12 +20,16 @@ export default function Header() {
               navbarScroll
             >
               <Nav.Link className="border-end border-dark">
-                <img src={Login_user} alt="" />
-                &nbsp; <span className="text-dark h5">Login</span>
+                <Link to="/login" className="text-decoration-none">
+                  <img src={Login_user} alt="" />
+                  &nbsp; <span className="text-dark h5">Login</span>
+                </Link>
               </Nav.Link>
 
               <Nav.Link>
-                &nbsp; <span className="text-dark h5">Signup</span>
+                <Link to="/investor" className="text-decoration-none">
+                  &nbsp; <span className="text-dark h5">Signup</span>
+                </Link>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

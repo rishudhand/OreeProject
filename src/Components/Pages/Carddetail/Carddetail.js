@@ -8,9 +8,11 @@ import Lock from "../../../Assets/icon/lock.png";
 import Calander from "../../../Assets/icon/calander.png";
 import User from "../../../Assets/icon/user.png";
 import Drcard from "../../../Assets/icon/card.png";
+import Header from "../../Layout/Header";
 export default function Carddetail() {
   return (
     <div>
+      <Header />
       <div
         className="login_banner p-4"
         style={{

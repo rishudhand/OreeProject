@@ -6,9 +6,11 @@ import { Link } from "react-router-dom";
 import { BsFillEyeSlashFill } from "react-icons/bs";
 import Lock from "../../../Assets/icon/lock.png";
 import Forgetkey from "../../../Assets/icon/forget.png";
+import Header from "../../Layout/Header";
 export default function Newpassword() {
   return (
     <div>
+      <Header />
       <div
         className="login_banner p-4"
         style={{

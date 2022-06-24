@@ -4,9 +4,12 @@ import { Card, Col, Row, Button } from "react-bootstrap";
 import "../Login/Login.scss";
 import { Link } from "react-router-dom";
 import { BsArrowLeft } from "react-icons/bs";
+import Header from "../../Layout/Header";
+
 export default function Boardbenefits() {
   return (
     <div>
+      <Header />
       <div
         className="login_banner p-4"
         style={{

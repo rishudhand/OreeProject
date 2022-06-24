@@ -9,11 +9,13 @@ import Steve from "../../../../Assets/image/steve.png";
 import Kyra from "../../../../Assets/image/kyra.png";
 import Julia from "../../../../Assets/image/julia.png";
 import Bg_card from "../../../../Assets/image/bg_card.png";
-
+import Header from "../../Layout/Header";
+import Footer from "../../Layout/Footer";
 
 export default function MyNotification() {
   return (
     <div>
+      <Header />
       <div className="bg_light p-5">
         <div className="container">
           <Row>
@@ -395,6 +397,7 @@ export default function MyNotification() {
         </Modal> */}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

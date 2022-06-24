@@ -9,9 +9,11 @@ import { BsFillEyeSlashFill } from "react-icons/bs";
 import File from "../../../Assets/icon/file.png";
 import Showfile from "../../../Assets/icon/showfile.png";
 import Cross from "../../../Assets/icon/cross.png";
+import Header from "../../Layout/Header";
 export default function Investor() {
   return (
     <div>
+      <Header />
       <div
         className="login_banner p-4"
         style={{

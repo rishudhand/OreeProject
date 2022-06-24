@@ -28,9 +28,12 @@ import Jullia from "../../../../Assets/image/jullia.png";
 import Victoria from "../../../../Assets/image/victoria.png";
 import Dott from "../../../../Assets/icon/dott.png";
 import Delete from "../../../../Assets/icon/delete.png";
+import Header from "../../Layout/Header";
+import Footer from "../../Layout/Footer";
 export default function Network() {
   return (
     <div>
+      <Header />
       <div className="bg_light p-5">
         <div className="container">
           <Tab.Container id="left-tabs-example">
@@ -1380,47 +1383,55 @@ export default function Network() {
                             </Button>
                           </Form>
                         </Card.Header>
-                        <Card.Body className="p-4 py-3">
-                          <div className="d-flex justify-content-between align-items-center ">
-                            <div className="profile_head align-items-center d-flex">
-                              <div
-                                className="avatar avatar-md position-relative text-center rounded-circle"
-                                style={{ height: "80px", width: "80px" }}
-                              >
-                                <img src={Victoria} class="avatar-img w-100" />
-                              </div>
-                              &nbsp;&nbsp;
-                              <p className="font_bolder">
-                                Jullia William
-                                <p className="text-secondary m-0 ">
-                                  Angel Startup
-                                </p>
-                              </p>
-                            </div>
-
-                            <div className="moreinfo d-flex">
-                              <Button className="bigbutton px-4 border-0 p-2 rounded-pill">
-                                Message
-                              </Button>
-                              <Dropdown className="connection_drop">
-                                <Dropdown.Toggle
-                                  variant="transparent"
-                                  id="dropdown-basic"
+                        <Link
+                          to="/networkprofile"
+                          className="text-decoration-none"
+                        >
+                          <Card.Body className="p-4 py-3">
+                            <div className="d-flex justify-content-between align-items-center ">
+                              <div className="profile_head align-items-center d-flex">
+                                <div
+                                  className="avatar avatar-md position-relative text-center rounded-circle"
+                                  style={{ height: "80px", width: "80px" }}
                                 >
-                                  <img src={Dott} alt="" />
-                                </Dropdown.Toggle>
-                                <Dropdown.Menu>
-                                  <Dropdown.Item href="#/action-1">
-                                    <div className="d-flex">
-                                      <img src={Delete} alt="" />
-                                      &nbsp; Remove Connection
-                                    </div>
-                                  </Dropdown.Item>
-                                </Dropdown.Menu>
-                              </Dropdown>
+                                  <img
+                                    src={Victoria}
+                                    class="avatar-img w-100"
+                                  />
+                                </div>
+                                &nbsp;&nbsp;
+                                <p className="font_bolder text-dark">
+                                  Jullia William
+                                  <p className="text-secondary m-0 ">
+                                    Angel Startup
+                                  </p>
+                                </p>
+                              </div>
+
+                              <div className="moreinfo d-flex">
+                                <Button className="bigbutton px-4 border-0 p-2 rounded-pill">
+                                  Message
+                                </Button>
+                                <Dropdown className="connection_drop">
+                                  <Dropdown.Toggle
+                                    variant="transparent"
+                                    id="dropdown-basic"
+                                  >
+                                    <img src={Dott} alt="" />
+                                  </Dropdown.Toggle>
+                                  <Dropdown.Menu>
+                                    <Dropdown.Item href="#/action-1">
+                                      <div className="d-flex">
+                                        <img src={Delete} alt="" />
+                                        &nbsp; Remove Connection
+                                      </div>
+                                    </Dropdown.Item>
+                                  </Dropdown.Menu>
+                                </Dropdown>
+                              </div>
                             </div>
-                          </div>
-                        </Card.Body>
+                          </Card.Body>
+                        </Link>
                         <hr className="m-0" />
                         <Card.Body className="p-4 py-3">
                           <div className="d-flex justify-content-between align-items-center ">
@@ -1641,6 +1652,7 @@ export default function Network() {
           </Tab.Container>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

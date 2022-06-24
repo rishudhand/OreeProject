@@ -32,10 +32,9 @@ export default function Header() {
             <Form.Group>
               <Form.Control
                 type="text"
-                className="border-0"
+                className="border-0 ms-3"
                 placeholder="Search here..."
                 onClick={recenthandleShow}
-                style={{ lineHeight: "35px" }}
               />
             </Form.Group>
             <Link to="/onsearch">
@@ -43,10 +42,11 @@ export default function Header() {
                 className="bigbutton position-absolute rounded-circle"
                 type="submit"
                 style={{
-                  width: "49px",
-                  height: "49px",
+                  width: "40px",
+                  height: "40px",
                   lineHeight: "15px",
-                  right: "2%",
+                  right: "1%",
+                  top: "5%",
                 }}
               >
                 <img src={Search} alt="" />
@@ -66,34 +66,34 @@ export default function Header() {
               style={{ maxHeight: "200px" }}
               navbarScroll
             >
-              <Nav.Link className="text-center">
+              <Nav.Link className="text-center ms-2">
                 <Link to="/" className="text-decoration-none">
                   <img src={Home} alt="" />
-                  <p className="text-dark h5">Home</p>
+                  <p className="text-dark h6">Home</p>
                 </Link>
               </Nav.Link>
 
-              <Nav.Link className="text-center">
+              <Nav.Link className="text-center ms-2">
                 <Link to="/network" className="text-decoration-none">
                   <img src={Multiuser} alt="" />
-                  <p className="text-dark h5">My Network</p>
+                  <p className="text-dark h6">My Network</p>
                 </Link>
               </Nav.Link>
-              <Nav.Link className="text-center">
+              <Nav.Link className="text-center ms-2">
                 <Link to="/deal" className="text-decoration-none">
                   <img src={Deal} alt="" />
-                  <p className="text-dark h5">Deals</p>
+                  <p className="text-dark h6">Deals</p>
                 </Link>
               </Nav.Link>
-              <Nav.Link className="text-center">
+              <Nav.Link className="text-center ms-2">
                 <Link to="/mynotification" className="text-decoration-none">
                   <img src={Notification} alt="" />
-                  <p className="text-dark h5">My Notification</p>
+                  <p className="text-dark h6">My Notification</p>
                 </Link>
               </Nav.Link>
-              <Nav.Link className="text-center">
+              <Nav.Link className="text-center ms-2">
                 <img src={Chat} alt="" />
-                <p className="text-dark h5">Chat</p>
+                <p className="text-dark h6">Chat</p>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

@@ -5,9 +5,11 @@ import "../Login/Login.scss";
 import { Link } from "react-router-dom";
 import { BsArrowLeft } from "react-icons/bs";
 import List_check from "../../../Assets/icon/list_check.png";
+import Header from "../../Layout/Header";
 export default function Membership() {
   return (
     <div>
+      <Header />
       <div
         className="login_banner p-4"
         style={{
