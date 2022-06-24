@@ -116,7 +116,7 @@ export default function Login() {
                       </div>
                       <p className="text-secondary d-flex justify-content-center align-items-center font_bold">
                         Don’t have any account?
-                        <Link to="/investor" className="text-decoration-none">
+                        <Link to="/Stepone" className="text-decoration-none">
                           &nbsp;
                           <span className="h6 m-0 p-0 navyColor font_bolder">
                             Sign up

@@ -420,13 +420,13 @@ export default function Deal() {
                   backgroundColor: "#ffffff",
                   backgroundImage: `url(${Bg_card})`,
                   backgroundPosition: "right",
-                  backgroundSize: "contain",
+                  backgroundSize: "62% 101%",
                   backgroundRepeat: "no-repeat",
                 }}
               >
                 <Card.Body className="p-2">
                   <Row>
-                    <Col xs={10}>
+                    <Col xs={9}>
                       <p className="navyColor h4 font_bolder">
                         Become a Board Member
                       </p>

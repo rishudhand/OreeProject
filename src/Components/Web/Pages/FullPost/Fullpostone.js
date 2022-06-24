@@ -1,18 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
+import "../../Layout/Header.scss";
 import Profilebackground from "../../../../Assets/image/profilebackground.jfif";
 import Profile from "../../../../Assets/image/avtar.png";
-import { Col, Button, Row, Card } from "react-bootstrap";
+import { Col, Button, Row, Card, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import User from "../../../../Assets/image/user.png";
+import Done from "../../../../Assets/icon/done.png";
+import Like from "../../../../Assets/icon/like.png";
+import Comment from "../../../../Assets/icon/comment.png";
+import Share from "../../../../Assets/icon/share.png";
+import Sticker from "../../../../Assets/icon/sticker.png";
+import Gallery from "../../../../Assets/icon/gallery.png";
 import Userone from "../../../../Assets/image/userone.png";
 import Nextuser from "../../../../Assets/image/nextuser.png";
+import James from "../../../../Assets/image/james.png";
 import Steve from "../../../../Assets/image/steve.png";
 import Kyra from "../../../../Assets/image/kyra.png";
 import Julia from "../../../../Assets/image/julia.png";
 import Bg_card from "../../../../Assets/image/bg_card.png";
+import Modallayout from "../../Popup/Modallayout.js";
+import Requestinfo from "../../Popup/Requestinfo.js";
+import Rightcheck from "../../../../Assets/icon/rightcheck.png";
+import RequestMoreinfo from "../../Popup/RequestMoreinfo.js";
 import Header from "../../Layout/Header";
 import Footer from "../../Layout/Footer";
 
-export default function MyNotification() {
+export default function Fullpostone() {
+  const [moreinfoshow, moreinfosetShow] = useState(false);
+
+  const moreinfohandleShow = () => moreinfosetShow(true);
+  const moreinfohandleClose = () => moreinfosetShow(false);
   return (
     <div>
       <Header />
@@ -50,7 +67,7 @@ export default function MyNotification() {
                     upgrade your membership
                   </p>
                   <p className="red font_bold">Upgrade Membership</p>
-                  <hr className="m-0" />
+                  <hr />
                   <div
                     className="about_user text-left"
                     style={{ textAlign: "left" }}
@@ -63,7 +80,7 @@ export default function MyNotification() {
                       printer took a galley of type and scrambled it to make a
                       type specimen book.
                     </p>
-                    <hr className="m-0" />
+                    <hr />
                     <div className="d-flex font_bold justify-content-between">
                       <p className="text-secondary">My Connections</p>
                       <p className="text-dark">5k+</p>
@@ -78,162 +95,164 @@ export default function MyNotification() {
                   className="border-0 mb-3"
                   style={{ background: "#ffffff" }}
                 >
-                  <Card.Body className="p-4 py-4">
-                    <div className="">
-                      <div className="profile_head d-flex justify-content-between">
+                  <Card.Header className="border-0">
+                    <p className="text-center font_bolder m-0 p-2">
+                      Deal Stage
+                    </p>
+                  </Card.Header>
+                  <Card.Body className="p-4 py-2">
+                    <div className="container px-5">
+                      <div className="d-flex overflow-hidden text-center justify-content-around align-items-center">
+                        <div className="main">
+                          <div
+                            className="circle m-auto start_point position-relative rounded-circle text-center "
+                            style={{ width: "49px", height: "49px" }}
+                          >
+                            <p
+                              className="bigbutton text-white font_bolder rounded-circle position-absolute investor_progress"
+                              style={{ width: "40px", height: "40px" }}
+                            >
+                              <img src={Rightcheck} alt="" />
+                            </p>
+                          </div>
+                          <p className="text-dark">Stage</p>
+                        </div>
+                        <div className="main">
+                          <div
+                            className="circle m-auto start_point position-relative rounded-circle text-center "
+                            style={{ width: "49px", height: "49px" }}
+                          >
+                            <p
+                              className="bigbutton font_bolder text-white rounded-circle position-absolute investor_progress"
+                              style={{ width: "40px", height: "40px" }}
+                            >
+                              <img src={Rightcheck} alt="" />
+                            </p>
+                          </div>
+                          <p className="text-dark">Stage</p>
+                        </div>
+                        <div className="main">
+                          <div
+                            className="circle m-auto position-relative rounded-circle text-center "
+                            style={{ width: "49px", height: "49px" }}
+                          >
+                            <p
+                              className="bg_gray font_bolder text-white rounded-circle position-absolute investor_progress"
+                              style={{ width: "40px", height: "40px" }}
+                            >
+                              3
+                            </p>
+                          </div>
+                          <p className="text-dark">Stage</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="d-flex justify-content-between align-items-center ">
+                      <div className="profile_head d-flex">
                         <div
                           className="avatar avatar-md position-relative text-center rounded-circle"
                           style={{ height: "80px", width: "80px" }}
                         >
-                          <img src={Steve} class="avatar-img w-100" />
+                          <img src={User} class="avatar-img w-100" />
                         </div>
                         &nbsp;&nbsp;
-                        <div
-                          className="right_notification"
-                          style={{ width: "90%" }}
-                        >
-                          <p className="d-flex m-0 justify-content-between">
-                            <p className="font_bolder m-0">
-                              Julia commented on your deal offer
-                            </p>
-                            <p className="m-0">1 min ago</p>
-                          </p>
-                          <p className="text-secondary font_bold m-0 ">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum been the
-                            industry's standard dummy text ever since the 1500s.
-                          </p>
-                        </div>
+                        <p className="font_bolder">
+                          Aayushi Gajjar
+                          <p className="text-secondary m-0 ">Startup</p>
+                          <p className="h6">5 minutes ago</p>
+                        </p>
+                      </div>
+
+                      <div className="moreinfo d-flex">
+                        <Button className="lightgreen border-0 ms-2 px-3 p-2 rounded-pill">
+                          Accepted
+                        </Button>
                       </div>
                     </div>
                   </Card.Body>
                   <hr className="m-0" />
-                  <Card.Body className="p-4 py-4">
-                    <div className="">
-                      <div className="profile_head d-flex justify-content-between">
-                        <div
-                          className="avatar avatar-md position-relative text-center rounded-circle"
-                          style={{ height: "80px", width: "80px" }}
-                        >
-                          <img src={Steve} class="avatar-img w-100" />
+                  <Card.Body className="px-3">
+                    <p className="text-dark font_bold">Description</p>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries,
+                    </p>
+                    <Row>
+                      <Col xs={6} className="mb-3">
+                        <div className="gray_light p-3 sidebar_profile">
+                          <p className="font_bold m-0">Name</p>
+                          <p className="font_bolder">Luke Pvt Ltd</p>
                         </div>
-                        &nbsp;&nbsp;
-                        <div
-                          className="right_notification"
-                          style={{ width: "90%" }}
-                        >
-                          <p className="d-flex m-0 justify-content-between">
-                            <p className="font_bolder m-0">
-                              Julia commented on your deal offer
-                            </p>
-                            <p className="m-0">1 min ago</p>
-                          </p>
-                          <p className="text-secondary font_bold m-0 ">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum been the
-                            industry's standard dummy text ever since the 1500s.
-                          </p>
+                      </Col>
+                      <Col xs={6} className="mb-3">
+                        <div className="gray_light p-3 sidebar_profile">
+                          <p className="font_bold m-0">Business Type</p>
+                          <p className="font_bolder">New</p>
                         </div>
-                      </div>
-                    </div>
-                  </Card.Body>
-                  <hr className="m-0" />
-                  <Card.Body className="p-4 py-4">
-                    <div className="">
-                      <div className="profile_head d-flex justify-content-between">
-                        <div
-                          className="avatar avatar-md position-relative text-center rounded-circle"
-                          style={{ height: "80px", width: "80px" }}
-                        >
-                          <img src={Kyra} class="avatar-img w-100" />
+                      </Col>
+                      <Col xs={6} className="mb-3">
+                        <div className="gray_light p-3 sidebar_profile">
+                          <p className="font_bold m-0">Business Category</p>
+                          <p className="font_bolder">IT Companies</p>
                         </div>
-                        &nbsp;&nbsp;
-                        <div
-                          className="right_notification"
-                          style={{ width: "90%" }}
-                        >
-                          <p className="d-flex m-0 justify-content-between">
-                            <p className="font_bolder m-0">
-                              Julia commented on your deal offer
-                            </p>
-                            <p className="m-0">1 min ago</p>
-                          </p>
-                          <p className="text-secondary font_bold m-0 ">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum been the
-                            industry's standard dummy text ever since the 1500s.
-                          </p>
+                      </Col>
+                      <Col xs={6} className="mb-3">
+                        <div className="gray_light p-3 sidebar_profile">
+                          <p className="font_bold m-0">Funding Goal</p>
+                          <p className="font_bolder">10k</p>
                         </div>
-                      </div>
-                    </div>
-                  </Card.Body>
-                  <hr className="m-0" />
-                  <Card.Body className="p-4 py-4">
-                    <div className="">
-                      <div className="profile_head d-flex justify-content-between">
-                        <div
-                          className="avatar avatar-md position-relative text-center rounded-circle"
-                          style={{ height: "80px", width: "80px" }}
-                        >
-                          <img src={Nextuser} class="avatar-img w-100" />
+                      </Col>
+                      <Col xs={6} className="mb-3">
+                        <div className="gray_light p-3 sidebar_profile">
+                          <p className="font_bold m-0">Estimate Revenue</p>
+                          <p className="font_bolder">30k</p>
                         </div>
-                        &nbsp;&nbsp;
-                        <div
-                          className="right_notification"
-                          style={{ width: "90%" }}
-                        >
-                          <p className="d-flex m-0 justify-content-between">
-                            <p className="font_bolder m-0">
-                              Julia commented on your deal offer
-                            </p>
-                            <p className="m-0">1 min ago</p>
-                          </p>
-                          <p className="text-secondary font_bold m-0 ">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum been the
-                            industry's standard dummy text ever since the 1500s.
-                          </p>
+                      </Col>
+                      <Col xs={6} className="mb-3">
+                        <div className="gray_light p-3 sidebar_profile">
+                          <p className="font_bold m-0">Estimate profit</p>
+                          <p className="font_bolder">20k</p>
                         </div>
-                      </div>
-                    </div>
-                  </Card.Body>
-                  <hr className="m-0" />
-                  <Card.Body className="p-4 py-4">
-                    <div className="">
-                      <div className="profile_head d-flex justify-content-between">
-                        <div
-                          className="avatar avatar-md position-relative text-center rounded-circle"
-                          style={{ height: "80px", width: "80px" }}
-                        >
-                          <img src={Userone} class="avatar-img w-100" />
+                      </Col>
+                      <Col xs={6} className="mb-3">
+                        <div className="gray_light p-3 sidebar_profile">
+                          <p className="font_bold m-0">Funding Amount</p>
+                          <p className="font_bolder">100k</p>
                         </div>
-                        &nbsp;&nbsp;
-                        <div
-                          className="right_notification"
-                          style={{ width: "90%" }}
-                        >
-                          <p className="d-flex m-0 justify-content-between">
-                            <p className="font_bolder m-0">
-                              Julia commented on your deal offer
-                            </p>
-                            <p className="m-0">1 min ago</p>
-                          </p>
-                          <p className="text-secondary font_bold m-0 ">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum been the
-                            industry's standard dummy text ever since the 1500s.
-                          </p>
+                      </Col>
+                      <Col xs={6} className="mb-3">
+                        <div className="gray_light p-3 sidebar_profile">
+                          <p className="font_bold m-0">Funding Type</p>
+                          <p className="font_bolder">Crowd Funded </p>
                         </div>
-                      </div>
-                    </div>
-                  </Card.Body>
-                  <hr className="m-0" />
-                  <Card.Body className="text-center">
-                    <Link
-                      to="/"
-                      className="text-secondary text-decoration-none font_bold"
-                    >
-                      See More
+                      </Col>
+                    </Row>
+                    <Row className="mb-3">
+                      <Col xs={6} className="mb-3">
+                        <div className=" text-white bigbutton p-3 sidebar_profile">
+                          <p className="font_bold m-0">Bid Amount</p>
+                          <p className="font_bolder">$50,000</p>
+                        </div>
+                      </Col>
+                      <Col xs={6} className="mb-3">
+                        <div className="gray_light bigbutton text-white p-3 sidebar_profile">
+                          <p className="font_bold m-0">Equity</p>
+                          <p className="font_bolder">8%</p>
+                        </div>
+                      </Col>
+                    </Row>
+                    <Link to="/agreement">
+                      <Button
+                        className="bigbutton mb-2 p-3 w-100 border-0 rounded-pill"
+                        type="submit"
+                      >
+                        Accepted
+                      </Button>
                     </Link>
                   </Card.Body>
                 </Card>
@@ -380,22 +399,11 @@ export default function MyNotification() {
               </Card>
             </Col>
           </Row>
-
-          {/* <Modal show={show} onHide={handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>Modal heading</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-              Close
-            </Button>
-            <Button variant="primary" onClick={handleClose}>
-              Save Changes
-            </Button>
-          </Modal.Footer>
-        </Modal> */}
         </div>
+
+        <Modallayout show={moreinfoshow} handleChange={moreinfohandleClose}>
+          <RequestMoreinfo />
+        </Modallayout>
       </div>
       <Footer />
     </div>

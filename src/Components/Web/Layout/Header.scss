@@ -6,6 +6,11 @@
 .brand{
     flex-wrap: initial !important;
 }
+.recentchat {
+    min-height: 570px;
+    overflow-y: auto;
+    max-height: 570px;
+}
 .desktop_navbar .navbar_block{
     display: block !important;
 }

@@ -63,7 +63,7 @@ export default function Carddetail() {
                             className="mb-4 field "
                             controlId="formBasicPassword"
                           >
-                            <div className="d-flex border rounded-pill p-2 px-4">
+                            <div className="d-flex align-items-center border rounded-pill p-2 px-4">
                               <img src={Calander} alt="" />
                               <Form.Control
                                 type="text"
@@ -102,7 +102,7 @@ export default function Carddetail() {
                       </Form.Group>
 
                       <Form.Group className="mb-3">
-                        <Link to="/investor">
+                        <Link to="/steptwo">
                           <Button
                             className="bigbutton rounded-pill border-0 w-100 p-3"
                             type="submit"

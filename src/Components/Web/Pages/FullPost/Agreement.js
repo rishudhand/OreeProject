@@ -1,18 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
+import "../../Layout/Header.scss";
 import Profilebackground from "../../../../Assets/image/profilebackground.jfif";
 import Profile from "../../../../Assets/image/avtar.png";
-import { Col, Button, Row, Card } from "react-bootstrap";
+import { Col, Button, Row, Card, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import User from "../../../../Assets/image/user.png";
+import Done from "../../../../Assets/icon/done.png";
+import Like from "../../../../Assets/icon/like.png";
+import Comment from "../../../../Assets/icon/comment.png";
+import Share from "../../../../Assets/icon/share.png";
+import Sticker from "../../../../Assets/icon/sticker.png";
+import Gallery from "../../../../Assets/icon/gallery.png";
 import Userone from "../../../../Assets/image/userone.png";
 import Nextuser from "../../../../Assets/image/nextuser.png";
+import James from "../../../../Assets/image/james.png";
 import Steve from "../../../../Assets/image/steve.png";
 import Kyra from "../../../../Assets/image/kyra.png";
 import Julia from "../../../../Assets/image/julia.png";
 import Bg_card from "../../../../Assets/image/bg_card.png";
+import Modallayout from "../../Popup/Modallayout.js";
+import Requestinfo from "../../Popup/Requestinfo.js";
+import Rightcheck from "../../../../Assets/icon/rightcheck.png";
+import RequestMoreinfo from "../../Popup/RequestMoreinfo.js";
 import Header from "../../Layout/Header";
 import Footer from "../../Layout/Footer";
-
-export default function MyNotification() {
+export default function Agreement() {
   return (
     <div>
       <Header />
@@ -50,7 +62,7 @@ export default function MyNotification() {
                     upgrade your membership
                   </p>
                   <p className="red font_bold">Upgrade Membership</p>
-                  <hr className="m-0" />
+                  <hr />
                   <div
                     className="about_user text-left"
                     style={{ textAlign: "left" }}
@@ -63,7 +75,7 @@ export default function MyNotification() {
                       printer took a galley of type and scrambled it to make a
                       type specimen book.
                     </p>
-                    <hr className="m-0" />
+                    <hr />
                     <div className="d-flex font_bold justify-content-between">
                       <p className="text-secondary">My Connections</p>
                       <p className="text-dark">5k+</p>
@@ -78,163 +90,59 @@ export default function MyNotification() {
                   className="border-0 mb-3"
                   style={{ background: "#ffffff" }}
                 >
-                  <Card.Body className="p-4 py-4">
-                    <div className="">
-                      <div className="profile_head d-flex justify-content-between">
-                        <div
-                          className="avatar avatar-md position-relative text-center rounded-circle"
-                          style={{ height: "80px", width: "80px" }}
-                        >
-                          <img src={Steve} class="avatar-img w-100" />
-                        </div>
-                        &nbsp;&nbsp;
-                        <div
-                          className="right_notification"
-                          style={{ width: "90%" }}
-                        >
-                          <p className="d-flex m-0 justify-content-between">
-                            <p className="font_bolder m-0">
-                              Julia commented on your deal offer
-                            </p>
-                            <p className="m-0">1 min ago</p>
-                          </p>
-                          <p className="text-secondary font_bold m-0 ">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum been the
-                            industry's standard dummy text ever since the 1500s.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </Card.Body>
-                  <hr className="m-0" />
-                  <Card.Body className="p-4 py-4">
-                    <div className="">
-                      <div className="profile_head d-flex justify-content-between">
-                        <div
-                          className="avatar avatar-md position-relative text-center rounded-circle"
-                          style={{ height: "80px", width: "80px" }}
-                        >
-                          <img src={Steve} class="avatar-img w-100" />
-                        </div>
-                        &nbsp;&nbsp;
-                        <div
-                          className="right_notification"
-                          style={{ width: "90%" }}
-                        >
-                          <p className="d-flex m-0 justify-content-between">
-                            <p className="font_bolder m-0">
-                              Julia commented on your deal offer
-                            </p>
-                            <p className="m-0">1 min ago</p>
-                          </p>
-                          <p className="text-secondary font_bold m-0 ">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum been the
-                            industry's standard dummy text ever since the 1500s.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </Card.Body>
-                  <hr className="m-0" />
-                  <Card.Body className="p-4 py-4">
-                    <div className="">
-                      <div className="profile_head d-flex justify-content-between">
-                        <div
-                          className="avatar avatar-md position-relative text-center rounded-circle"
-                          style={{ height: "80px", width: "80px" }}
-                        >
-                          <img src={Kyra} class="avatar-img w-100" />
-                        </div>
-                        &nbsp;&nbsp;
-                        <div
-                          className="right_notification"
-                          style={{ width: "90%" }}
-                        >
-                          <p className="d-flex m-0 justify-content-between">
-                            <p className="font_bolder m-0">
-                              Julia commented on your deal offer
-                            </p>
-                            <p className="m-0">1 min ago</p>
-                          </p>
-                          <p className="text-secondary font_bold m-0 ">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum been the
-                            industry's standard dummy text ever since the 1500s.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </Card.Body>
-                  <hr className="m-0" />
-                  <Card.Body className="p-4 py-4">
-                    <div className="">
-                      <div className="profile_head d-flex justify-content-between">
-                        <div
-                          className="avatar avatar-md position-relative text-center rounded-circle"
-                          style={{ height: "80px", width: "80px" }}
-                        >
-                          <img src={Nextuser} class="avatar-img w-100" />
-                        </div>
-                        &nbsp;&nbsp;
-                        <div
-                          className="right_notification"
-                          style={{ width: "90%" }}
-                        >
-                          <p className="d-flex m-0 justify-content-between">
-                            <p className="font_bolder m-0">
-                              Julia commented on your deal offer
-                            </p>
-                            <p className="m-0">1 min ago</p>
-                          </p>
-                          <p className="text-secondary font_bold m-0 ">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum been the
-                            industry's standard dummy text ever since the 1500s.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </Card.Body>
-                  <hr className="m-0" />
-                  <Card.Body className="p-4 py-4">
-                    <div className="">
-                      <div className="profile_head d-flex justify-content-between">
-                        <div
-                          className="avatar avatar-md position-relative text-center rounded-circle"
-                          style={{ height: "80px", width: "80px" }}
-                        >
-                          <img src={Userone} class="avatar-img w-100" />
-                        </div>
-                        &nbsp;&nbsp;
-                        <div
-                          className="right_notification"
-                          style={{ width: "90%" }}
-                        >
-                          <p className="d-flex m-0 justify-content-between">
-                            <p className="font_bolder m-0">
-                              Julia commented on your deal offer
-                            </p>
-                            <p className="m-0">1 min ago</p>
-                          </p>
-                          <p className="text-secondary font_bold m-0 ">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum been the
-                            industry's standard dummy text ever since the 1500s.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </Card.Body>
-                  <hr className="m-0" />
-                  <Card.Body className="text-center">
-                    <Link
-                      to="/"
-                      className="text-secondary text-decoration-none font_bold"
+                  <Card.Header className="border-0">
+                    <p className="text-center font_bolder m-0 p-2">
+                      Agreement Overview
+                    </p>
+                  </Card.Header>
+
+                  <Card.Body className="px-3">
+                    <p className="text-dark font_bolder h4">Oree</p>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged. It was popularised in the
+                      1960s with the release of Letraset sheets containing Lorem
+                      Ipsum passages, and more recently with desktop publishing
+                      software like Aldus PageMaker including versions of Lorem
+                      Ipsum.
+                    </p>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged. It was popularised in the
+                      1960s with the release of Letraset sheets containing Lorem
+                      Ipsum passages, and more recently with desktop publishing
+                      software like Aldus PageMaker including versions of Lorem
+                      Ipsum.
+                    </p>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged. It was popularised in the
+                      1960s with the release of Letraset sheets containing Lorem
+                      Ipsum passages, and more recently with desktop publishing
+                      software like Aldus PageMaker including versions of Lorem
+                      Ipsum.
+                    </p>
+                    <div
+                      className="signature text-center p-5"
+                      style={{ border: "2px dashed black" }}
                     >
-                      See More
-                    </Link>
+                      <p className="font_bolder">Signature</p>
+                    </div>
                   </Card.Body>
                 </Card>
               </div>
@@ -380,21 +288,6 @@ export default function MyNotification() {
               </Card>
             </Col>
           </Row>
-
-          {/* <Modal show={show} onHide={handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>Modal heading</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-              Close
-            </Button>
-            <Button variant="primary" onClick={handleClose}>
-              Save Changes
-            </Button>
-          </Modal.Footer>
-        </Modal> */}
         </div>
       </div>
       <Footer />

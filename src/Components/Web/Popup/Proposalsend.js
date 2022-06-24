@@ -1,5 +1,6 @@
 import React from "react";
 import { Form, Modal, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import Proposel_send from "../../../Assets/image/proposel_send.png";
 export default function Proposalsend() {
   return (
@@ -33,12 +34,14 @@ export default function Proposalsend() {
             >
               Cancel
             </Button>
-            <Button
-              className="bg-white text-dark font_bold px-4 border border-dark ms-2 p-2 rounded-pill"
-              type="submit"
-            >
-              Submit proposal
-            </Button>
+            <Link to="/fullpostone">
+              <Button
+                className="bg-white text-dark font_bold px-4 border border-dark ms-2 p-2 rounded-pill"
+                type="submit"
+              >
+                Submit proposal
+              </Button>
+            </Link>
           </div>
         </div>
       </Modal.Body>

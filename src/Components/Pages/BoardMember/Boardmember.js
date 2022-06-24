@@ -128,7 +128,7 @@ export default function Boardmember() {
                             />
                           </Form.Group>
                           <Form.Group className="mb-3">
-                            <Link to="/investor">
+                            <Link to="/stepthree">
                               <Button
                                 className="bigbutton rounded-pill border-0 w-100 p-3"
                                 type="submit"

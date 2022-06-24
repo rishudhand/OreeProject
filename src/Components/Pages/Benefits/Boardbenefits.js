@@ -42,7 +42,7 @@ export default function Boardbenefits() {
                         </Link>
                       </Col>
                       <Col xs={7}>
-                        <p className="text-dark font_bolder">Board member</p>
+                        <p className="text-dark font_bolder">Benefits</p>
                       </Col>
                     </Row>
 
@@ -74,12 +74,14 @@ export default function Boardbenefits() {
                         </li>
                       </ol>
                     </Card.Text>
-                    <Button
-                      className="bigbutton rounded-pill border-0 w-100 p-3"
-                      type="submit"
-                    >
-                      Next
-                    </Button>
+                    <Link to="/boardmember">
+                      <Button
+                        className="bigbutton rounded-pill border-0 w-100 p-3"
+                        type="submit"
+                      >
+                        Next
+                      </Button>
+                    </Link>
                   </Card.Body>
                 </Card>
               </Col>

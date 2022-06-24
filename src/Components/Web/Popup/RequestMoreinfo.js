@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
-
+import Modallayout from "./Modallayout";
+import Requestinfo from "./Requestinfo.js";
 export default function RequestMoreinfo() {
+  const [show, setShow] = useState(false);
+
+  const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
   return (
     <div>
       <Modal.Header
@@ -64,9 +69,18 @@ export default function RequestMoreinfo() {
             <Button className="bg-white text-dark font_bold px-4 border border-dark ms-2 p-2 rounded-pill">
               Reject
             </Button>
+            <Button
+              className="bg-white text-dark font_bold px-4 border border-dark ms-2 p-2 rounded-pill"
+              onClick={handleShow}
+            >
+              Show to other Investors
+            </Button>
           </div>
         </div>
       </Modal.Body>
+      <Modallayout show={show} handleChange={handleClose}>
+        <Requestinfo />
+      </Modallayout>
     </div>
   );
 }

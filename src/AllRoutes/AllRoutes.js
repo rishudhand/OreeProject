@@ -5,7 +5,7 @@ import Newpassword from "../Components/Pages/Newpassword/Newpassword.js";
 import Donepassword from "../Components/Pages/Donepassword/Donepassword.js";
 import Selectrole from "../Components/Pages/Selectrole/Selectrole.js";
 import Question from "../Components/Pages/Questions/Question.js";
-import Investor from "../Components/Pages/Investor/Investor.js";
+import Investor from "../Components/Pages/Signup/Stepone.js";
 import Membership from "../Components/Pages/Membership/Membership.js";
 import Carddetail from "../Components/Pages/Carddetail/Carddetail.js";
 import Benefits from "../Components/Pages/Benefits/Benefits.js";

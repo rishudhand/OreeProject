@@ -43,7 +43,7 @@ export default function Question() {
                           ipsum dolor sit amet, consectetur adipiscing
                           incididunt ut labore et dolore magna aliqua.
                         </p>
-                        <div className="container ms-3">
+                        <div className="container ms-1">
                           <Row>
                             <Col xs={3}>
                               <Form.Check
@@ -68,7 +68,7 @@ export default function Question() {
                           ipsum dolor sit amet, consectetur adipiscing
                           incididunt ut labore et dolore magna aliqua.
                         </p>
-                        <div className="container ms-3">
+                        <div className="container ms-1">
                           <Row>
                             <Col xs={3}>
                               <Form.Check
@@ -93,7 +93,7 @@ export default function Question() {
                           ipsum dolor sit amet, consectetur adipiscing
                           incididunt ut labore et dolore magna aliqua.
                         </p>
-                        <div className="container ms-3">
+                        <div className="container ms-1">
                           <Row>
                             <Col xs={3}>
                               <Form.Check
@@ -118,7 +118,7 @@ export default function Question() {
                           ipsum dolor sit amet, consectetur adipiscing
                           incididunt ut labore et dolore magna aliqua.
                         </p>
-                        <div className="container ms-3">
+                        <div className="container ms-1">
                           <Row>
                             <Col xs={3}>
                               <Form.Check
