@@ -5,9 +5,11 @@ import "../Login/Login.scss";
 import { Link } from "react-router-dom";
 import Investor from "../../../Assets/icon/investor.png";
 import Startup from "../../../Assets/icon/startup.png";
+import Header from "../../Layout/Header";
 export default function Selectrole() {
   return (
     <div>
+      <Header />
       <div
         className="login_banner p-4"
         style={{

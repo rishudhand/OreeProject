@@ -5,9 +5,11 @@ import "../Login/Login.scss";
 import { Link } from "react-router-dom";
 
 import Laststep from "../../../Assets/image/laststep.png";
+import Header from "../../Layout/Header";
 export default function Notification() {
   return (
     <div>
+      <Header />
       <div
         className="login_banner p-4"
         style={{

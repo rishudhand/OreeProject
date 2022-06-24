@@ -4,9 +4,12 @@ import { Card, Form, Button, Row, Col } from "react-bootstrap";
 import "../Login/Login.scss";
 import Mailcheck from "../../../Assets/icon/checkmail.png";
 import { Link } from "react-router-dom";
+import Header from "../../Layout/Header";
+
 export default function Checkmail() {
   return (
     <div>
+      <Header />
       <div
         className="login_banner p-4"
         style={{

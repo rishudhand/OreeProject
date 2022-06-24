@@ -19,11 +19,11 @@ export default function Header() {
   const recenthandleShow = () => recentsetShow(true);
   const recenthandleClose = () => recentsetShow(false);
   return (
-    <div className="header bg-white">
-      <Navbar expand="lg" className="p-2 px-5 desktop_navbar">
+    <div className="container p-2 header bg-white">
+      <Navbar expand="lg" className=" desktop_navbar">
         <Container fluid className="brand align-items-center p-0">
           <Navbar.Brand href="#" className="" style={{ width: "10%" }}>
-            <img src={Logo} alt="" className="logo " style={{ width: "60%" }} />
+            <img src={Logo} alt="" className="logo " style={{ width: "75%" }} />
           </Navbar.Brand>
           <Form
             className="d-flex position-relative border p-1 rounded-pill"
@@ -32,10 +32,9 @@ export default function Header() {
             <Form.Group>
               <Form.Control
                 type="text"
-                className="border-0"
+                className="border-0 ms-3"
                 placeholder="Search here..."
                 onClick={recenthandleShow}
-                style={{ lineHeight: "35px" }}
               />
             </Form.Group>
             <Link to="/onsearch">
@@ -43,10 +42,11 @@ export default function Header() {
                 className="bigbutton position-absolute rounded-circle"
                 type="submit"
                 style={{
-                  width: "49px",
-                  height: "49px",
+                  width: "40px",
+                  height: "40px",
                   lineHeight: "15px",
-                  right: "2%",
+                  right: "1%",
+                  top: "5%",
                 }}
               >
                 <img src={Search} alt="" />
@@ -62,45 +62,44 @@ export default function Header() {
             }}
           >
             <Nav
-              className=" my-2 my-lg-0 menu_mobile justify-content-evenly align-items-end"
+              className=" my-2 my-lg-0 menu_mobile justify-content-center align-items-end"
               style={{ maxHeight: "200px" }}
               navbarScroll
             >
-              <Nav.Link className="text-center">
+              <Nav.Link className="text-center ms-4">
                 <Link to="/" className="text-decoration-none">
                   <img src={Home} alt="" />
-                  <p className="text-dark h5">Home</p>
+                  <p className="text-dark h6">Home</p>
                 </Link>
               </Nav.Link>
 
-              <Nav.Link className="text-center">
+              <Nav.Link className="text-center ms-4">
                 <Link to="/network" className="text-decoration-none">
                   <img src={Multiuser} alt="" />
-                  <p className="text-dark h5">My Network</p>
+                  <p className="text-dark h6">My Network</p>
                 </Link>
               </Nav.Link>
-              <Nav.Link className="text-center">
+              <Nav.Link className="text-center ms-4">
                 <Link to="/deal" className="text-decoration-none">
                   <img src={Deal} alt="" />
-                  <p className="text-dark h5">Deals</p>
+                  <p className="text-dark h6">Deals</p>
                 </Link>
               </Nav.Link>
-              <Nav.Link className="text-center">
+              <Nav.Link className="text-center ms-4">
                 <Link to="/mynotification" className="text-decoration-none">
                   <img src={Notification} alt="" />
-                  <p className="text-dark h5">My Notification</p>
+                  <p className="text-dark h6">My Notification</p>
                 </Link>
               </Nav.Link>
-              <Nav.Link className="text-center">
-                <img src={Chat} alt="" />
-                <p className="text-dark h5">Chat</p>
+              <Nav.Link className="text-center ms-4">
+                <Link to="/chat" className="text-decoration-none">
+                  <img src={Chat} alt="" />
+                  <p className="text-dark h6">Chat</p>
+                </Link>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
-          <div
-            className="d-flex  justify-content-center"
-            style={{ width: "20%" }}
-          >
+          <div className="d-flex  justify-content-end" style={{ width: "20%" }}>
             <div
               className="avatar avatar-md position-relative text-center justify-content-center rounded-circle"
               style={{ height: "55px", width: "55px" }}
@@ -113,7 +112,7 @@ export default function Header() {
               <p className="text-secondary text_bold h6">Investor</p>
             </p>
             &nbsp;&nbsp;
-            <BsChevronDown />
+            <BsChevronDown className="mt-2" />
           </div>
         </Container>
       </Navbar>

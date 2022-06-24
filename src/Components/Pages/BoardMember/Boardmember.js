@@ -4,10 +4,12 @@ import { Card, Col, Form, Row, Button } from "react-bootstrap";
 import "../Login/Login.scss";
 import { Link } from "react-router-dom";
 import { BsArrowLeft } from "react-icons/bs";
+import Header from "../../Layout/Header";
 
 export default function Boardmember() {
   return (
     <div>
+      <Header />
       <div>
         <div
           className="login_banner p-4"
@@ -126,7 +128,7 @@ export default function Boardmember() {
                             />
                           </Form.Group>
                           <Form.Group className="mb-3">
-                            <Link to="/investor">
+                            <Link to="/stepthree">
                               <Button
                                 className="bigbutton rounded-pill border-0 w-100 p-3"
                                 type="submit"

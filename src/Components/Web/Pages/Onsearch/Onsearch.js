@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Profilebackground from "../../../../Assets/image/profilebackground.jfif";
 import Profile from "../../../../Assets/image/avtar.png";
 import { Col, Button, Row, Card } from "react-bootstrap";
@@ -12,9 +12,19 @@ import Verified from "../../../../Assets/icon/verified.png";
 import Mutual from "../../../../Assets/image/mutual.png";
 import Mutualo from "../../../../Assets/image/mutualo.png";
 import Jordan from "../../../../Assets/image/jordan.png";
+import Filter from "../../../../Assets/icon/filter.png";
+import Modallayout from "../../Popup/Modallayout";
+import Filtercheck from "../../Popup/Filter";
+import Header from "../../Layout/Header";
+import Footer from "../../Layout/Footer";
 export default function Onsearch() {
+  const [filtershow, filtersetShow] = useState(false);
+
+  const filterhandleShow = () => filtersetShow(true);
+  const filterhandleClose = () => filtersetShow(false);
   return (
     <div>
+      <Header />
       <div className="bg_light p-5">
         <div className="container">
           <div className="d-flex">
@@ -22,10 +32,13 @@ export default function Onsearch() {
               Investor
             </p>
             <p className="border-dark border text-dark ms-2 rounded-pill p-2 px-4">
-              Investor
+              Startup
             </p>
             <p className="border-dark border text-dark ms-2 rounded-pill p-2 px-4">
               Deal
+            </p>
+            <p className=" ms-2 p-2 px-4" onClick={filterhandleShow}>
+              <img src={Filter} alt="" />
             </p>
           </div>
           <Row>
@@ -1223,6 +1236,129 @@ export default function Onsearch() {
                   </Card.Body>
                   <hr className="m-0" />
                 </Card>
+                <Card
+                  className="border-0 mb-3"
+                  style={{ background: "#ffffff" }}
+                >
+                  <Card.Body className="p-4 py-2">
+                    <div className="d-flex justify-content-between align-items-center ">
+                      <div className="profile_head d-flex">
+                        <div
+                          className="avatar avatar-md position-relative text-center rounded-circle"
+                          style={{ height: "80px", width: "80px" }}
+                        >
+                          <img src={Jordan} class="avatar-img w-100" />
+                        </div>
+                        &nbsp;&nbsp;
+                        <p className="font_bolder">
+                          Jordan William
+                          <p className="text-secondary font_bold m-0 ">
+                            Angel Startup
+                          </p>
+                          <p className="text-secondary font_bold m-0 ">
+                            5 minutes ago
+                          </p>
+                        </p>
+                      </div>
+                    </div>
+                  </Card.Body>
+                  <hr className="m-0" />
+                  <Card.Body>
+                    <Row>
+                      <Col xs={9}>
+                        <p className="text-dark font_bolder">Deal Name</p>
+                      </Col>
+                      <Col xs={3}>
+                        <p className="text-dark font_bold">Luke</p>
+                      </Col>
+                    </Row>
+                    <Row>
+                      <Col xs={9}>
+                        <p className="text-dark font_bolder">Business Type</p>
+                      </Col>
+                      <Col xs={3}>
+                        <p className="text-dark font_bold">New</p>
+                      </Col>
+                    </Row>
+                    <Row>
+                      <Col xs={9}>
+                        <p className="text-dark font_bolder">
+                          Business Category
+                        </p>
+                      </Col>
+                      <Col xs={3}>
+                        <p className="text-dark font_bold">IT Companies</p>
+                      </Col>
+                    </Row>
+                    <Row>
+                      <Col xs={9}>
+                        <p className="text-dark font_bolder">Funding Type</p>
+                      </Col>
+                      <Col xs={3}>
+                        <p className="text-dark font_bold">Single Investment</p>
+                      </Col>
+                    </Row>
+                  </Card.Body>
+                  <hr className="m-0" />
+                  <Card.Body className="p-4 py-2">
+                    <div className="d-flex justify-content-between align-items-center ">
+                      <div className="profile_head d-flex">
+                        <div
+                          className="avatar avatar-md position-relative text-center rounded-circle"
+                          style={{ height: "80px", width: "80px" }}
+                        >
+                          <img src={Nextuser} class="avatar-img w-100" />
+                        </div>
+                        &nbsp;&nbsp;
+                        <p className="font_bolder">
+                          Jordan William
+                          <p className="text-secondary m-0 ">Angel Startup</p>
+                          <p className="text-secondary font_bold m-0 ">
+                            5 minutes ago
+                          </p>
+                        </p>
+                      </div>
+                    </div>
+                  </Card.Body>
+                  <hr className="m-0" />
+                  <Card.Body>
+                    <Row>
+                      <Col xs={9}>
+                        <p className="text-dark font_bolder">Deal Name</p>
+                      </Col>
+                      <Col xs={3}>
+                        <p className="text-dark font_bold">Luke</p>
+                      </Col>
+                    </Row>
+                    <Row>
+                      <Col xs={9}>
+                        <p className="text-dark font_bolder">Business Type</p>
+                      </Col>
+                      <Col xs={3}>
+                        <p className="text-dark font_bold">New</p>
+                      </Col>
+                    </Row>
+                    <Row>
+                      <Col xs={9}>
+                        <p className="text-dark font_bolder">
+                          Business Category
+                        </p>
+                      </Col>
+                      <Col xs={3}>
+                        <p className="text-dark font_bold">IT Companies</p>
+                      </Col>
+                    </Row>
+                    <Row>
+                      <Col xs={9}>
+                        <p className="text-dark font_bolder">Funding Type</p>
+                      </Col>
+                      <Col xs={3}>
+                        <p className="text-dark font_bold">Single Investment</p>
+                      </Col>
+                    </Row>
+                  </Card.Body>
+                  <hr className="m-0" />
+                </Card>
               </div>
             </Col>
             <Col md={3}>
@@ -1232,13 +1368,13 @@ export default function Onsearch() {
                   backgroundColor: "#ffffff",
                   backgroundImage: `url(${Bg_card})`,
                   backgroundPosition: "right",
-                  backgroundSize: "contain",
+                  backgroundSize: "62% 101%",
                   backgroundRepeat: "no-repeat",
                 }}
               >
                 <Card.Body className="p-2">
                   <Row>
-                    <Col xs={10}>
+                    <Col xs={9}>
                       <p className="navyColor h4 font_bolder">
                         Become a Board Member
                       </p>
@@ -1260,6 +1396,10 @@ export default function Onsearch() {
           </Row>
         </div>
       </div>
+      <Footer />
+      <Modallayout show={filtershow} handleChange={filterhandleClose}>
+        <Filtercheck />
+      </Modallayout>
     </div>
   );
 }

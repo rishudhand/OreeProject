@@ -4,9 +4,12 @@ import { Card, Col, Row, Button } from "react-bootstrap";
 import "../Login/Login.scss";
 import { Link } from "react-router-dom";
 import { BsArrowLeft } from "react-icons/bs";
+import Header from "../../Layout/Header";
+
 export default function Boardbenefits() {
   return (
     <div>
+      <Header />
       <div
         className="login_banner p-4"
         style={{
@@ -39,7 +42,7 @@ export default function Boardbenefits() {
                         </Link>
                       </Col>
                       <Col xs={7}>
-                        <p className="text-dark font_bolder">Board member</p>
+                        <p className="text-dark font_bolder">Benefits</p>
                       </Col>
                     </Row>
 
@@ -71,12 +74,14 @@ export default function Boardbenefits() {
                         </li>
                       </ol>
                     </Card.Text>
-                    <Button
-                      className="bigbutton rounded-pill border-0 w-100 p-3"
-                      type="submit"
-                    >
-                      Next
-                    </Button>
+                    <Link to="/boardmember">
+                      <Button
+                        className="bigbutton rounded-pill border-0 w-100 p-3"
+                        type="submit"
+                      >
+                        Next
+                      </Button>
+                    </Link>
                   </Card.Body>
                 </Card>
               </Col>

@@ -5,9 +5,11 @@ import "../Login/Login.scss";
 import Envelope from "../../../Assets/icon/envelope.png";
 import Forgetkey from "../../../Assets/icon/forget.png";
 import { Link } from "react-router-dom";
+import Header from "../../Layout/Header";
 export default function Forgetpassword() {
   return (
     <div>
+      <Header />
       <div
         className="login_banner p-4"
         style={{

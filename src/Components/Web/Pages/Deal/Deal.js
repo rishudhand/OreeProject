@@ -9,9 +9,13 @@ import Kyra from "../../../../Assets/image/kyra.png";
 import Julia from "../../../../Assets/image/julia.png";
 import Bg_card from "../../../../Assets/image/bg_card.png";
 import Verified from "../../../../Assets/icon/verified.png";
+import Header from "../../Layout/Header";
+import Footer from "../../Layout/Footer";
+
 export default function Deal() {
   return (
     <div>
+      <Header />
       <div className="bg_light p-5">
         <div className="container">
           <Row>
@@ -416,13 +420,13 @@ export default function Deal() {
                   backgroundColor: "#ffffff",
                   backgroundImage: `url(${Bg_card})`,
                   backgroundPosition: "right",
-                  backgroundSize: "contain",
+                  backgroundSize: "62% 101%",
                   backgroundRepeat: "no-repeat",
                 }}
               >
                 <Card.Body className="p-2">
                   <Row>
-                    <Col xs={10}>
+                    <Col xs={9}>
                       <p className="navyColor h4 font_bolder">
                         Become a Board Member
                       </p>
@@ -444,6 +448,7 @@ export default function Deal() {
           </Row>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
