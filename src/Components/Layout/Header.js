@@ -27,7 +27,7 @@ export default function Header() {
               </Nav.Link>
 
               <Nav.Link>
-                <Link to="/investor" className="text-decoration-none">
+                <Link to="/Stepone" className="text-decoration-none">
                   &nbsp; <span className="text-dark h6">Signup</span>
                 </Link>
               </Nav.Link>
