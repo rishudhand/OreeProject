@@ -1383,12 +1383,13 @@ export default function Network() {
                             </Button>
                           </Form>
                         </Card.Header>
-                        <Link
-                          to="/networkprofile"
-                          className="text-decoration-none"
-                        >
-                          <Card.Body className="p-4 py-3">
-                            <div className="d-flex justify-content-between align-items-center ">
+
+                        <Card.Body className="p-4 py-3">
+                          <div className="d-flex justify-content-between align-items-center ">
+                            <Link
+                              to="/networkprofile"
+                              className="text-decoration-none"
+                            >
                               <div className="profile_head align-items-center d-flex">
                                 <div
                                   className="avatar avatar-md position-relative text-center rounded-circle"
@@ -1407,31 +1408,31 @@ export default function Network() {
                                   </p>
                                 </p>
                               </div>
-
-                              <div className="moreinfo d-flex">
-                                <Button className="bigbutton px-4 border-0 p-2 rounded-pill">
-                                  Message
-                                </Button>
-                                <Dropdown className="connection_drop">
-                                  <Dropdown.Toggle
-                                    variant="transparent"
-                                    id="dropdown-basic"
-                                  >
-                                    <img src={Dott} alt="" />
-                                  </Dropdown.Toggle>
-                                  <Dropdown.Menu>
-                                    <Dropdown.Item href="#/action-1">
-                                      <div className="d-flex">
-                                        <img src={Delete} alt="" />
-                                        &nbsp; Remove Connection
-                                      </div>
-                                    </Dropdown.Item>
-                                  </Dropdown.Menu>
-                                </Dropdown>
-                              </div>
+                            </Link>
+                            <div className="moreinfo d-flex">
+                              <Button className="bigbutton px-4 border-0 p-2 rounded-pill">
+                                Message
+                              </Button>
+                              <Dropdown className="connection_drop">
+                                <Dropdown.Toggle
+                                  variant="transparent"
+                                  id="dropdown-basic"
+                                >
+                                  <img src={Dott} alt="" />
+                                </Dropdown.Toggle>
+                                <Dropdown.Menu>
+                                  <Dropdown.Item>
+                                    <div className="d-flex">
+                                      <img src={Delete} alt="" />
+                                      &nbsp; Remove Connection
+                                    </div>
+                                  </Dropdown.Item>
+                                </Dropdown.Menu>
+                              </Dropdown>
                             </div>
-                          </Card.Body>
-                        </Link>
+                          </div>
+                        </Card.Body>
+
                         <hr className="m-0" />
                         <Card.Body className="p-4 py-3">
                           <div className="d-flex justify-content-between align-items-center ">
@@ -1463,7 +1464,7 @@ export default function Network() {
                                   <img src={Dott} alt="" />
                                 </Dropdown.Toggle>
                                 <Dropdown.Menu>
-                                  <Dropdown.Item href="#/action-1">
+                                  <Dropdown.Item>
                                     <div className="d-flex">
                                       <img src={Delete} alt="" />
                                       &nbsp; Remove Connection
@@ -1505,7 +1506,7 @@ export default function Network() {
                                   <img src={Dott} alt="" />
                                 </Dropdown.Toggle>
                                 <Dropdown.Menu>
-                                  <Dropdown.Item href="#/action-1">
+                                  <Dropdown.Item>
                                     <div className="d-flex">
                                       <img src={Delete} alt="" />
                                       &nbsp; Remove Connection
@@ -1547,7 +1548,7 @@ export default function Network() {
                                   <img src={Dott} alt="" />
                                 </Dropdown.Toggle>
                                 <Dropdown.Menu>
-                                  <Dropdown.Item href="#/action-1">
+                                  <Dropdown.Item>
                                     <div className="d-flex">
                                       <img src={Delete} alt="" />
                                       &nbsp; Remove Connection
@@ -1589,7 +1590,7 @@ export default function Network() {
                                   <img src={Dott} alt="" />
                                 </Dropdown.Toggle>
                                 <Dropdown.Menu>
-                                  <Dropdown.Item href="#/action-1">
+                                  <Dropdown.Item>
                                     <div className="d-flex">
                                       <img src={Delete} alt="" />
                                       &nbsp; Remove Connection
@@ -1631,7 +1632,7 @@ export default function Network() {
                                   <img src={Dott} alt="" />
                                 </Dropdown.Toggle>
                                 <Dropdown.Menu>
-                                  <Dropdown.Item href="#/action-1">
+                                  <Dropdown.Item>
                                     <div className="d-flex">
                                       <img src={Delete} alt="" />
                                       &nbsp; Remove Connection

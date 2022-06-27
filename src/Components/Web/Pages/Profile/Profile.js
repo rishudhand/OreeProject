@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../Layout/Header.scss";
 import Profilebackground from "../../../../Assets/image/profilebackground.jfif";
-import Profile from "../../../../Assets/image/avtar.png";
+import Profileimg from "../../../../Assets/image/avtar.png";
 import { Dropdown, Col, Button, Row, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Nextuser from "../../../../Assets/image/nextuser.png";
@@ -17,10 +17,23 @@ import Share_profile from "../../../../Assets/icon/share_profile.png";
 import Block from "../../../../Assets/icon/block.png";
 import Header from "../../Layout/Header";
 import Footer from "../../Layout/Footer";
+import Edit from "../../../../Assets/icon/edit.png";
+import plus from "../../../../Assets/icon/plus.png";
 import Cake from "../../../../Assets/icon/cake.png";
-import Globe from "../../../../Assets/icon/globe.png";
+import Modallayout from "../../Popup/Modallayout.js";
+import Editprofile from "../../Popup/Editprofile.js";
+import Addinterest from "../../Popup/Addinterest";
+import Board from "../../../../Assets/icon/board.png";
+export default function Profile() {
+  const [Editshow, EditsetShow] = useState(false);
 
-export default function Networkprofile() {
+  const EdithandleShow = () => EditsetShow(true);
+  const EdithandleClose = () => EditsetShow(false);
+
+  const [addinterestshow, addinterestsetShow] = useState(false);
+
+  const addinteresthandleShow = () => addinterestsetShow(true);
+  const addinteresthandleClose = () => addinterestsetShow(false);
   return (
     <div>
       <Header />
@@ -31,33 +44,73 @@ export default function Networkprofile() {
             <Col md={9}>
               <div className="sidebar_profile">
                 <div
-                  className="profile_bg"
+                  className="profile_bg position-relative"
                   style={{
                     backgroundImage: `url(${Profilebackground})`,
                     height: "180px",
                     backgroundPosition: "center",
                     backgroundSize: "cover",
                   }}
-                ></div>
-
-                <div className="profile_detail p-2 px-5 mb-3 bg-white">
+                >
                   <div
-                    className="profile_img rounded-circle mb-3"
+                    className="edit position-absolute text-center bg-white rounded-circle"
+                    style={{
+                      width: "30px",
+                      height: "30px",
+                      right: "10px",
+                      top: "10px",
+                    }}
+                  >
+                    <img src={Edit} alt="" />
+                  </div>
+                </div>
+
+                <div className="profile_detail position-relative p-2 px-5 mb-3 bg-white">
+                  <div
+                    className="edit position-absolute text-center gray_light rounded-circle"
+                    onClick={EdithandleShow}
+                    style={{
+                      width: "30px",
+                      height: "30px",
+                      right: "10px",
+                      top: "10px",
+                    }}
+                  >
+                    <img src={Edit} alt="" />
+                  </div>
+                  <div
+                    className="profile_img position-relative rounded-circle mb-3"
                     style={{
                       verticalAlign: "baseline",
                       marginTop: "-7%",
                     }}
                   >
+                    <div
+                      className="edit position-absolute text-center bigbutton border border-white rounded-circle"
+                      style={{
+                        width: "30px",
+                        height: "30px",
+                        right: "-15px",
+                        lineHeight: "23px",
+                        bottom: "10px",
+                      }}
+                    >
+                      <img src={plus} alt="" />
+                    </div>
                     <img
-                      src={Profile}
+                      src={Profileimg}
                       alt=""
                       className="w-100 h-100 rounded-circle"
                     />
                   </div>
                   <p className="text-dark font_bolder h2 mb-0">John Doe</p>
                   <p className="text-secondary font_bold">Angle Investor</p>
-                  <div className="detail d-flex align-items-center justify-content-between">
-                    <div className="d-flex mb-4">
+                  <p className="text-secondary font_bold">
+                    <img src={Board} alt="" />
+                    &nbsp; Board Member
+                  </p>
+                  <div className="d-flex mb-4 justify-content-between">
+                    <div className="d-flex">
                       <div className="d-flex">
                         <div
                           className="avatar avatar-md position-relative text-center rounded-circle"
@@ -108,58 +161,13 @@ export default function Networkprofile() {
                         to="/"
                         className="text-dark text-decoration-none font_bold"
                       >
-                        55 + connections
+                        13 mutual connections
                       </Link>
                     </div>
-                    <div className="main align-items-center d-flex">
-                      <div className="dob ms-2">
-                        <img src={Cake} alt="" />
-                        &nbsp;24 January,2022
-                      </div>
-                      <div className="dob ms-3">
-                        <img src={Globe} alt="" />
-                        &nbsp;New York
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="d-flex">
-                    <Link to="">
-                      <Button
-                        className="bigbutton mb-3 rounded-pill border-0 "
-                        type="submit"
-                      >
-                        Connect
-                      </Button>
-                    </Link>
-                    <Link to="">
-                      <Button
-                        className="bg-transparent text-dark border-dark mb-3 ms-2 rounded-pill "
-                        type="submit"
-                      >
-                        <img src={Locker} alt="" />
-                        &nbsp; Message
-                      </Button>
-                    </Link>
-                    <Dropdown>
-                      <Dropdown.Toggle
-                        variant="success"
-                        id="dropdown-basic"
-                        className="bg-transparent text-dark border-dark mb-3 ms-2 rounded-pill "
-                      >
-                        More
-                      </Dropdown.Toggle>
-                      <Dropdown.Menu>
-                        <Dropdown.Item to="/">
-                          <img src={Share_profile} alt="" />
-                          &nbsp; Share profile via message
-                        </Dropdown.Item>
-                        <Dropdown.Item to="/">
-                          <img src={Block} alt="" />
-                          &nbsp; Block User
-                        </Dropdown.Item>
-                      </Dropdown.Menu>
-                    </Dropdown>
+                    <p className="m-0">
+                      <img src={Cake} alt="" />
+                      &nbsp;24 January,2022
+                    </p>
                   </div>
                 </div>
                 <Card className="mb-3">
@@ -187,42 +195,56 @@ export default function Networkprofile() {
                 </Card>
                 <Card className="mb-3">
                   <Card.Body>
-                    <p className="h4 mb-3">Interests In Investment</p>
+                    <div className="d-flex mb-2 justify-content-between">
+                      <p className="h4 mb-3">Interests In Investment</p>
+                      <Button
+                        className="bigbutton rounded-pill mb-2"
+                        type="submit"
+                        onClick={addinteresthandleShow}
+                      >
+                        Add Interest
+                      </Button>
+                    </div>
+
                     <Row>
-                      <Col xs={4} className="mb-3">
-                        <div className="gray_light p-3 sidebar_profile">
+                      <Col xs={3} className="mb-3">
+                        <div className="gray_light p-3 rounded-pill text-center">
                           <p className="font_bolder m-0">IT Company</p>
-                          <p className="font_bolder">Single Investment</p>
                         </div>
                       </Col>
-                      <Col xs={4} className="mb-3">
-                        <div className="gray_light p-3 sidebar_profile">
-                          <p className="font_bolder m-0">IT Company</p>
-                          <p className="font_bolder">Single Investment</p>
+                      <Col xs={3} className="mb-3">
+                        <div className="gray_light p-3 rounded-pill text-center">
+                          <p className="font_bolder m-0">Real Estate</p>
                         </div>
                       </Col>
-                      <Col xs={4} className="mb-3">
-                        <div className="gray_light p-3 sidebar_profile">
+                      <Col xs={3} className="mb-3">
+                        <div className="gray_light p-3 rounded-pill text-center">
                           <p className="font_bolder m-0">IT Company</p>
-                          <p className="font_bolder">Single Investment</p>
                         </div>
                       </Col>
-                      <Col xs={4} className="mb-3">
-                        <div className="gray_light p-3 sidebar_profile">
+                      <Col xs={3} className="mb-3">
+                        <div className="gray_light p-3 rounded-pill text-center">
                           <p className="font_bolder m-0">IT Company</p>
-                          <p className="font_bolder">Single Investment</p>
                         </div>
                       </Col>
-                      <Col xs={4} className="mb-3">
-                        <div className="gray_light p-3 sidebar_profile">
-                          <p className="font_bolder m-0">IT Company</p>
-                          <p className="font_bolder">Single Investment</p>
+                      <Col xs={3} className="mb-3">
+                        <div className="gray_light p-3 rounded-pill text-center">
+                          <p className="font_bolder m-0">Real Estate</p>
                         </div>
                       </Col>
-                      <Col xs={4} className="mb-3">
-                        <div className="gray_light p-3 sidebar_profile">
+                      <Col xs={3} className="mb-3">
+                        <div className="gray_light p-3 rounded-pill text-center">
                           <p className="font_bolder m-0">IT Company</p>
-                          <p className="font_bolder">Single Investment</p>
+                        </div>
+                      </Col>
+                      <Col xs={3} className="mb-3">
+                        <div className="gray_light p-3 rounded-pill text-center">
+                          <p className="font_bolder m-0">IT Company</p>
+                        </div>
+                      </Col>
+                      <Col xs={3} className="mb-3">
+                        <div className="gray_light p-3 rounded-pill text-center">
+                          <p className="font_bolder m-0">IT Company</p>
                         </div>
                       </Col>
                     </Row>
@@ -375,6 +397,12 @@ export default function Networkprofile() {
         </div>
       </div>
       <Footer />
+      <Modallayout show={Editshow} handleChange={EdithandleClose}>
+        <Editprofile />
+      </Modallayout>
+      <Modallayout show={addinterestshow} handleChange={addinteresthandleClose}>
+        <Addinterest />
+      </Modallayout>
     </div>
   );
 }

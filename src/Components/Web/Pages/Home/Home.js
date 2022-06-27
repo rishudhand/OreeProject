@@ -24,6 +24,8 @@ import Rightcheck from "../../../../Assets/icon/rightcheck.png";
 import RequestMoreinfo from "../../Popup/RequestMoreinfo.js";
 import Header from "../../Layout/Header";
 import Footer from "../../Layout/Footer";
+import Board from "../../../../Assets/icon/board.png";
+import Post from "../.../../../../../Assets/icon/post.png";
 export default function Home() {
   const [show, setShow] = useState(false);
 
@@ -44,7 +46,7 @@ export default function Home() {
         <div className="container">
           <Row>
             <Col md={3}>
-              <div className="sidebar_profile">
+              <div className="sidebar_profile mb-3">
                 <img
                   src={Profilebackground}
                   alt=""
@@ -95,43 +97,171 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+              <div className="sidebar_profile mb-3">
+                <img
+                  src={Profilebackground}
+                  alt=""
+                  className="w-100"
+                  style={{ maxHeight: "150px" }}
+                />
+                <div className="profile_detail text-center p-2 bg-white">
+                  <div className="profile_img rounded-circle mb-3">
+                    <img
+                      src={Profile}
+                      alt=""
+                      className="w-100 h-100 rounded-circle"
+                    />
+                  </div>
+                  <p className="text-dark font_bolder h2 mb-0">John Doe</p>
+                  <p className="text-secondary h6 font_bold">
+                    <img src={Board} alt="" />
+                    &nbsp; Board Member
+                  </p>
+
+                  <hr />
+                  <div
+                    className="about_user text-left"
+                    style={{ textAlign: "left" }}
+                  >
+                    <p className="text-dark h4 font_bold text-left">About</p>
+                    <p className="text-secondary ">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="sidebar_profile mb-3">
+                <img
+                  src={Profilebackground}
+                  alt=""
+                  className="w-100"
+                  style={{ maxHeight: "150px" }}
+                />
+                <div className="profile_detail text-center p-2 bg-white">
+                  <div className="profile_img rounded-circle mb-3">
+                    <img
+                      src={Profile}
+                      alt=""
+                      className="w-100 h-100 rounded-circle"
+                    />
+                  </div>
+                  <p className="text-dark font_bolder h2 mb-0">John Doe</p>
+                  <p className="text-secondary h5 font_bold"> Startup</p>
+                  <Link to="/">
+                    <Button
+                      className="bg_gray mb-3 rounded-pill border-0 w-100 p-3"
+                      type="submit"
+                    >
+                      Trial Expires in 7 Days
+                    </Button>
+                  </Link>
+                  <p className="text-dark">
+                    If want more learn more about the product and feactures
+                    upgrade your membership
+                  </p>
+                  <p className="red font_bold">Upgrade Membership</p>
+                  <hr />
+                  <div
+                    className="about_user text-left"
+                    style={{ textAlign: "left" }}
+                  >
+                    <p className="text-dark h4 font_bold text-left">About</p>
+                    <p className="text-secondary ">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book.
+                    </p>
+                    <hr />
+                    <div className="d-flex font_bold justify-content-between">
+                      <p className="text-secondary">My Connections</p>
+                      <p className="text-dark">5k+</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </Col>
             <Col md={6}>
               <div className="maindesign">
-                <Link to="/fullpost" className="text-decoration-none text-dark">
-                  <Card
-                    className="border-0 mb-3"
-                    style={{ background: "#ffffff" }}
-                  >
-                    <Card.Body className="p-4 py-2">
-                      <div className="d-flex justify-content-between align-items-center ">
-                        <div className="profile_head d-flex">
-                          <div
-                            className="avatar avatar-md position-relative text-center rounded-circle"
-                            style={{ height: "80px", width: "80px" }}
-                          >
-                            <img src={User} class="avatar-img w-100" />
-                          </div>
-                          &nbsp;&nbsp;
-                          <p className="font_bolder">
-                            Aayushi Gajjar
-                            <p className="text-secondary m-0 ">Startup</p>
-                            <p className="h6">5 minutes ago</p>
+                <Card
+                  className="border-0 mb-3"
+                  style={{ background: "#ffffff" }}
+                >
+                  <Card.Body className="p-4 py-2">
+                    <div className="d-flex justify-content-between align-items-center ">
+                      <div className="profile_head d-flex">
+                        <div
+                          className="avatar avatar-md position-relative text-center rounded-circle"
+                          style={{ height: "60px", width: "60px" }}
+                        >
+                          <img src={User} class="avatar-img w-100" />
+                        </div>
+                        &nbsp;&nbsp;
+                        <p className="font_bolder">
+                          Create a deal
+                          <p className="text-secondary m-0 ">
+                            Create a deal to start getting financial assistance.
                           </p>
-                        </div>
-
-                        <div className="moreinfo d-flex">
-                          <Button
-                            onClick={moreinfohandleShow}
-                            className="bigbutton  p-2 rounded-pill"
-                          >
-                            View document
-                          </Button>
-                        </div>
+                        </p>
                       </div>
-                    </Card.Body>
-                    <hr className="m-0" />
-                    <Card.Body className="px-3">
+
+                      <div className="moreinfo d-flex">
+                        <Button className="bg-transparent  p-2 border-0">
+                          <img src={Post} alt="" />
+                        </Button>
+                      </div>
+                    </div>
+                  </Card.Body>
+                </Card>
+
+                <Card
+                  className="border-0 mb-3"
+                  style={{ background: "#ffffff" }}
+                >
+                  <Card.Body className="p-4 py-2">
+                    <div className="d-flex justify-content-between align-items-center ">
+                      <div className="profile_head d-flex">
+                        <div
+                          className="avatar avatar-md position-relative text-center rounded-circle"
+                          style={{ height: "80px", width: "80px" }}
+                        >
+                          <img src={User} class="avatar-img w-100" />
+                        </div>
+                        &nbsp;&nbsp;
+                        <p className="font_bolder">
+                          Aayushi Gajjar
+                          <p className="text-secondary m-0 ">Startup</p>
+                          <p className="h6">5 minutes ago</p>
+                        </p>
+                      </div>
+
+                      <div className="moreinfo d-flex">
+                        <Button
+                          onClick={moreinfohandleShow}
+                          className="bigbutton  p-2 rounded-pill"
+                        >
+                          View document
+                        </Button>
+                        <Button
+                          onClick={handleShow}
+                          className="bigbutton ms-3 p-2 rounded-pill"
+                        >
+                          Request More info
+                        </Button>
+                      </div>
+                    </div>
+                  </Card.Body>
+                  <hr className="m-0" />
+                  <Card.Body className="px-3">
+                    <Link
+                      to="/fullpost"
+                      className="text-decoration-none text-dark"
+                    >
                       <Row>
                         <Col xs={8}>
                           <p className="font_bolder">Deal Name</p>
@@ -146,180 +276,178 @@ export default function Home() {
                           <p className="font_bold">Single Investment</p>
                         </Col>
                       </Row>
-                      <div className="d-flex justify-content-end">
-                        <button
-                          onClick={() => commentsetShow(!commentshow)}
-                          className=" bg-transparent border-0 text-decoration-nonetext-dark me-5"
-                        >
-                          See More...
-                        </button>
-                      </div>
+                    </Link>
+                    <div className="d-flex justify-content-end">
+                      <button
+                        onClick={() => commentsetShow(!commentshow)}
+                        className=" bg-transparent border-0 text-decoration-nonetext-dark me-5"
+                      >
+                        See More...
+                      </button>
+                    </div>
 
-                      <Row className="py-3">
-                        <Col xs={9}>
-                          <div className="d-flex align-items-center">
-                            <img src={Done} alt="" />
-                            <p className="text-secondary m-0 ms-2 font_bold">
-                              You & 500k+ others
-                            </p>
-                          </div>
-                        </Col>
-                        <Col xs={3}>
-                          <p className="font_bold">22 comments</p>
-                        </Col>
-                      </Row>
-                    </Card.Body>
-                    <hr className="p-0 m-0" />
-                    <Card.Body>
-                      <div className="d-flex justify-content-between text-center">
-                        <p className="p-2 px-5 sidebar_profile">
-                          <img src={Like} alt="" /> Like
-                        </p>
-                        <p className="p-2 px-5 gray_light sidebar_profile">
-                          <img src={Comment} alt="" /> Comments
-                        </p>
-                        <p className="p-2 px-5 sidebar_profile">
-                          <img src={Share} alt="" /> Share
-                        </p>
-                      </div>
-                      {commentshow ? (
-                        <div>
-                          <Row className="mb-3">
-                            <Col xs={2}>
-                              <div
-                                className="avatar avatar-md position-relative text-center rounded-circle"
-                                style={{ height: "80px", width: "80px" }}
+                    <Row className="py-3">
+                      <Col xs={9}>
+                        <div className="d-flex align-items-center">
+                          <img src={Done} alt="" />
+                          <p className="text-secondary m-0 ms-2 font_bold">
+                            You & 500k+ others
+                          </p>
+                        </div>
+                      </Col>
+                      <Col xs={3}>
+                        <p className="font_bold">22 comments</p>
+                      </Col>
+                    </Row>
+                  </Card.Body>
+                  <hr className="p-0 m-0" />
+                  <Card.Body>
+                    <div className="d-flex justify-content-between text-center">
+                      <p className="p-2 px-5 sidebar_profile">
+                        <img src={Like} alt="" /> Like
+                      </p>
+                      <p className="p-2 px-5 gray_light sidebar_profile">
+                        <img src={Comment} alt="" /> Comments
+                      </p>
+                      <p className="p-2 px-5 sidebar_profile">
+                        <img src={Share} alt="" /> Share
+                      </p>
+                    </div>
+                    {commentshow ? (
+                      <div>
+                        <Row className="mb-3">
+                          <Col xs={2}>
+                            <div
+                              className="avatar avatar-md position-relative text-center rounded-circle"
+                              style={{ height: "80px", width: "80px" }}
+                            >
+                              <img src={Profile} class="avatar-img w-100" />
+                            </div>
+                          </Col>
+                          <Col xs={10}>
+                            <Form>
+                              <Form.Group
+                                className="mb-3 d-flex border sidebar_profile align-items-center"
+                                controlId="exampleForm.ControlTextarea1"
                               >
-                                <img src={Profile} class="avatar-img w-100" />
-                              </div>
-                            </Col>
-                            <Col xs={10}>
-                              <Form>
-                                <Form.Group
-                                  className="mb-3 d-flex border sidebar_profile align-items-center"
-                                  controlId="exampleForm.ControlTextarea1"
-                                >
-                                  <Form.Control
-                                    as="textarea"
-                                    className="border-0"
-                                    placeholder="Comment here..."
-                                  />
-                                  <img
-                                    src={Sticker}
-                                    alt=""
-                                    style={{
-                                      width: "7%",
-                                      height: "20px",
-                                      marginRight: "20px",
-                                    }}
-                                  />
-                                  <img
-                                    src={Gallery}
-                                    alt=""
-                                    style={{
-                                      width: "7%",
-                                      height: "20px",
-                                      marginRight: "20px",
-                                    }}
-                                  />
-                                </Form.Group>
-                                <Button
-                                  className="bigbutton px-5 p-2 rounded-pill"
-                                  type="submit"
-                                >
-                                  Post
-                                </Button>
-                              </Form>
-                            </Col>
-                          </Row>
-                          <Row>
-                            <Col xs={2}>
-                              <div
-                                className="avatar avatar-md position-relative text-center rounded-circle"
-                                style={{ height: "80px", width: "80px" }}
+                                <Form.Control
+                                  as="textarea"
+                                  className="border-0"
+                                  placeholder="Comment here..."
+                                />
+                                <img
+                                  src={Sticker}
+                                  alt=""
+                                  style={{
+                                    width: "7%",
+                                    height: "20px",
+                                    marginRight: "20px",
+                                  }}
+                                />
+                                <img
+                                  src={Gallery}
+                                  alt=""
+                                  style={{
+                                    width: "7%",
+                                    height: "20px",
+                                    marginRight: "20px",
+                                  }}
+                                />
+                              </Form.Group>
+                              <Button
+                                className="bigbutton px-5 p-2 rounded-pill"
+                                type="submit"
                               >
-                                <img src={Userone} class="avatar-img w-100" />
-                              </div>
-                            </Col>
-                            <Col xs={10}>
-                              <div className="main_box">
-                                <div className="gray_light sidebar_profile p-2">
-                                  <p className="mb-0 font_bolder">John Bride</p>
-                                  <p className="mb-0 font_bold text-secondary">
-                                    Investor
-                                  </p>
-                                  <p className="mb-0 font_bold text-secondary">
-                                    In publishing and graphic design, Lorem
-                                    ipsum is a placeholder.
-                                  </p>
-                                </div>
-                                <p>
-                                  <Link
-                                    to="/"
-                                    className="text-decoration-none text-secondary"
-                                  >
-                                    Like
-                                  </Link>
-                                  &nbsp; |&nbsp;
-                                  <Link
-                                    to="/"
-                                    className="text-decoration-none text-secondary"
-                                  >
-                                    Reply
-                                  </Link>
+                                Post
+                              </Button>
+                            </Form>
+                          </Col>
+                        </Row>
+                        <Row>
+                          <Col xs={2}>
+                            <div
+                              className="avatar avatar-md position-relative text-center rounded-circle"
+                              style={{ height: "80px", width: "80px" }}
+                            >
+                              <img src={Userone} class="avatar-img w-100" />
+                            </div>
+                          </Col>
+                          <Col xs={10}>
+                            <div className="main_box">
+                              <div className="gray_light sidebar_profile p-2">
+                                <p className="mb-0 font_bolder">John Bride</p>
+                                <p className="mb-0 font_bold text-secondary">
+                                  Investor
+                                </p>
+                                <p className="mb-0 font_bold text-secondary">
+                                  In publishing and graphic design, Lorem ipsum
+                                  is a placeholder.
                                 </p>
                               </div>
-                              <Row>
-                                <Col xs={2}>
-                                  <div
-                                    className="avatar avatar-md position-relative text-center rounded-circle"
-                                    style={{ height: "60px", width: "60px" }}
-                                  >
-                                    <img
-                                      src={Userone}
-                                      class="avatar-img w-100"
-                                    />
-                                  </div>
-                                </Col>
-                                <Col xs={10}>
-                                  <div className="main_box">
-                                    <div className="gray_light sidebar_profile p-2">
-                                      <p className="mb-0 font_bolder">
-                                        John Bride
-                                      </p>
-                                      <p className="mb-0 font_bold text-secondary">
-                                        Investor
-                                      </p>
-                                      <p className="mb-0 font_bold text-secondary">
-                                        In publishing and graphic design, Lorem
-                                        ipsum is a placeholder.
-                                      </p>
-                                    </div>
-                                    <p>
-                                      <Link
-                                        to="/"
-                                        className="text-decoration-none text-secondary"
-                                      >
-                                        Like
-                                      </Link>
-                                      &nbsp; |&nbsp;
-                                      <Link
-                                        to="/"
-                                        className="text-decoration-none text-secondary"
-                                      >
-                                        Reply
-                                      </Link>
+                              <p>
+                                <Link
+                                  to="/"
+                                  className="text-decoration-none text-secondary"
+                                >
+                                  Like
+                                </Link>
+                                &nbsp; |&nbsp;
+                                <Link
+                                  to="/"
+                                  className="text-decoration-none text-secondary"
+                                >
+                                  Reply
+                                </Link>
+                              </p>
+                            </div>
+                            <Row>
+                              <Col xs={2}>
+                                <div
+                                  className="avatar avatar-md position-relative text-center rounded-circle"
+                                  style={{ height: "60px", width: "60px" }}
+                                >
+                                  <img src={Userone} class="avatar-img w-100" />
+                                </div>
+                              </Col>
+                              <Col xs={10}>
+                                <div className="main_box">
+                                  <div className="gray_light sidebar_profile p-2">
+                                    <p className="mb-0 font_bolder">
+                                      John Bride
+                                    </p>
+                                    <p className="mb-0 font_bold text-secondary">
+                                      Investor
+                                    </p>
+                                    <p className="mb-0 font_bold text-secondary">
+                                      In publishing and graphic design, Lorem
+                                      ipsum is a placeholder.
                                     </p>
                                   </div>
-                                </Col>
-                              </Row>
-                            </Col>
-                          </Row>
-                        </div>
-                      ) : null}
-                    </Card.Body>
-                  </Card>
-                </Link>
+                                  <p>
+                                    <Link
+                                      to="/"
+                                      className="text-decoration-none text-secondary"
+                                    >
+                                      Like
+                                    </Link>
+                                    &nbsp; |&nbsp;
+                                    <Link
+                                      to="/"
+                                      className="text-decoration-none text-secondary"
+                                    >
+                                      Reply
+                                    </Link>
+                                  </p>
+                                </div>
+                              </Col>
+                            </Row>
+                          </Col>
+                        </Row>
+                      </div>
+                    ) : null}
+                  </Card.Body>
+                </Card>
+
                 <Card
                   className="border-0 mb-3"
                   style={{ background: "#ffffff" }}

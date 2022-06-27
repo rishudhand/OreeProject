@@ -24,6 +24,7 @@ import Rightcheck from "../../../../Assets/icon/rightcheck.png";
 import RequestMoreinfo from "../../Popup/RequestMoreinfo.js";
 import Header from "../../Layout/Header";
 import Footer from "../../Layout/Footer";
+import Board from "../../../../Assets/icon/board.png";
 export default function Agreement() {
   return (
     <div>
@@ -32,7 +33,7 @@ export default function Agreement() {
         <div className="container">
           <Row>
             <Col md={3}>
-              <div className="sidebar_profile">
+              <div className="sidebar_profile mb-3">
                 <img
                   src={Profilebackground}
                   alt=""
@@ -80,6 +81,43 @@ export default function Agreement() {
                       <p className="text-secondary">My Connections</p>
                       <p className="text-dark">5k+</p>
                     </div>
+                  </div>
+                </div>
+              </div>
+              <div className="sidebar_profile mb-3">
+                <img
+                  src={Profilebackground}
+                  alt=""
+                  className="w-100"
+                  style={{ maxHeight: "150px" }}
+                />
+                <div className="profile_detail text-center p-2 bg-white">
+                  <div className="profile_img rounded-circle mb-3">
+                    <img
+                      src={Profile}
+                      alt=""
+                      className="w-100 h-100 rounded-circle"
+                    />
+                  </div>
+                  <p className="text-dark font_bolder h2 mb-0">John Doe</p>
+                  <p className="text-secondary h6 font_bold">
+                    <img src={Board} alt="" />
+                    &nbsp; Board Member
+                  </p>
+
+                  <hr />
+                  <div
+                    className="about_user text-left"
+                    style={{ textAlign: "left" }}
+                  >
+                    <p className="text-dark h4 font_bold text-left">About</p>
+                    <p className="text-secondary ">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book.
+                    </p>
                   </div>
                 </div>
               </div>

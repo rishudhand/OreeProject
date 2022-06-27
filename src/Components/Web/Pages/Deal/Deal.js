@@ -11,7 +11,9 @@ import Bg_card from "../../../../Assets/image/bg_card.png";
 import Verified from "../../../../Assets/icon/verified.png";
 import Header from "../../Layout/Header";
 import Footer from "../../Layout/Footer";
-
+import Done from "../../../../Assets/icon/done.png";
+import Like from "../../../../Assets/icon/like.png";
+import Share from "../../../../Assets/icon/share.png";
 export default function Deal() {
   return (
     <div>
@@ -301,6 +303,83 @@ export default function Deal() {
                         </div>
                       </div>
                     </div>
+                  </Card.Body>
+                </Card>
+                <Card
+                  className="border-0 mb-3"
+                  style={{ background: "#ffffff" }}
+                >
+                  <Card.Body className="p-4 py-2 d-flex justify-content-between align-items-center">
+                    <div className="d-flex ">
+                      <div
+                        className="avatar avatar-md position-relative text-center rounded-circle"
+                        style={{ height: "80px", width: "80px" }}
+                      >
+                        <img src={Nextuser} class="avatar-img w-100" />
+                      </div>
+                      &nbsp;&nbsp;
+                      <p className="font_bolder">
+                        Jullia William
+                        <p className="text-secondary m-0 ">Startup</p>
+                      </p>
+                    </div>
+                    <p className="text-danger font_bolder">Rejected</p>
+                  </Card.Body>
+                  <hr className="m-0" />
+                  <Card.Body className="px-3">
+                    <Row>
+                      <Col xs={8}>
+                        <p className="font_bolder">Deal Name</p>
+                        <p className="font_bolder">Business Type</p>
+                        <p className="font_bolder">Business Category</p>
+                        <p className="font_bolder">Funding Type</p>
+                      </Col>
+                      <Col xs={4}>
+                        <p className="font_bold">Luke</p>
+                        <p className="font_bold">New</p>
+                        <p className="font_bold">IT Companies</p>
+                        <p className="font_bold">Single Investment</p>
+                      </Col>
+                    </Row>
+                  </Card.Body>
+                </Card>
+                <hr className="p-0" />
+                <Card
+                  className="border-0 mb-3"
+                  style={{ background: "#ffffff" }}
+                >
+                  <Card.Body className="p-4 py-2 d-flex justify-content-between align-items-center">
+                    <div className="d-flex ">
+                      <div
+                        className="avatar avatar-md position-relative text-center rounded-circle"
+                        style={{ height: "80px", width: "80px" }}
+                      >
+                        <img src={Nextuser} class="avatar-img w-100" />
+                      </div>
+                      &nbsp;&nbsp;
+                      <p className="font_bolder">
+                        Jullia William
+                        <p className="text-secondary m-0 ">Startup</p>
+                      </p>
+                    </div>
+                    <p className="text_lightgreen font_bolder">Accepted</p>
+                  </Card.Body>
+                  <hr className="m-0" />
+                  <Card.Body className="px-3">
+                    <Row>
+                      <Col xs={8}>
+                        <p className="font_bolder">Deal Name</p>
+                        <p className="font_bolder">Business Type</p>
+                        <p className="font_bolder">Business Category</p>
+                        <p className="font_bolder">Funding Type</p>
+                      </Col>
+                      <Col xs={4}>
+                        <p className="font_bold">Luke</p>
+                        <p className="font_bold">New</p>
+                        <p className="font_bold">IT Companies</p>
+                        <p className="font_bold">Single Investment</p>
+                      </Col>
+                    </Row>
                   </Card.Body>
                 </Card>
               </div>

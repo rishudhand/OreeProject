@@ -17,6 +17,7 @@ import Modallayout from "../../Popup/Modallayout";
 import Filtercheck from "../../Popup/Filter";
 import Header from "../../Layout/Header";
 import Footer from "../../Layout/Footer";
+import Board from "../../../../Assets/icon/board.png";
 export default function Onsearch() {
   const [filtershow, filtersetShow] = useState(false);
 
@@ -1240,6 +1241,187 @@ export default function Onsearch() {
                   className="border-0 mb-3"
                   style={{ background: "#ffffff" }}
                 >
+                  <Card.Body className="p-5">
+                    <div className="d-flex justify-content-between align-items-center ">
+                      <div className="profile_head d-flex">
+                        <div
+                          className="avatar avatar-md position-relative text-center rounded-circle"
+                          style={{ height: "90px", width: "90px" }}
+                        >
+                          <img src={Kyra} class="avatar-img w-100" />
+                        </div>
+                        &nbsp;&nbsp;
+                        <p className="font_bolder">
+                          Mente John
+                          <p className="text-secondary font_bold m-0 ">
+                            <img src={Board} alt="" />
+                            &nbsp; Board Member
+                          </p>
+                          <p className="text-secondary border border-dark p-2 rounded-pill bg-transparent font_bold m-0 ">
+                            View full profile
+                          </p>
+                        </p>
+                      </div>
+                    </div>
+                  </Card.Body>
+                  <hr className="m-0 p-0" />
+                  <p className="text-dark font_bolder">Board Member</p>
+                  <Card.Body>
+                    <div className="d-flex justify-content-between align-items-center ">
+                      <div className="profile_head d-flex">
+                        <div
+                          className="avatar avatar-md position-relative text-center rounded-circle"
+                          style={{ height: "80px", width: "80px" }}
+                        >
+                          <img src={Jordan} class="avatar-img w-100" />
+                        </div>
+                        &nbsp;&nbsp;
+                        <p className="font_bolder">
+                          Jordan William
+                          <p className="text-secondary m-0 ">Angel Startup</p>
+                          <div className="d-flex">
+                            <div className="d-flex">
+                              <div
+                                className="avatar avatar-md position-relative text-center rounded-circle"
+                                style={{
+                                  height: "25px",
+                                  width: "25px",
+                                  border: "2px solid #fff",
+                                }}
+                              >
+                                <img src={Mutual} class="avatar-img w-100" />
+                              </div>
+                              <div
+                                className="avatar avatar-md position-relative text-center rounded-circle"
+                                style={{
+                                  height: "25px",
+                                  width: "25px",
+                                  border: "2px solid #fff",
+                                  marginLeft: "-8%",
+                                }}
+                              >
+                                <img src={Mutualo} class="avatar-img w-100" />
+                              </div>
+                              <div
+                                className="avatar avatar-md position-relative text-center rounded-circle"
+                                style={{
+                                  height: "25px",
+                                  width: "25px",
+                                  border: "2px solid #fff",
+                                  marginLeft: "-8%",
+                                }}
+                              >
+                                <img src={Steve} class="avatar-img w-100" />
+                              </div>
+                              <div
+                                className="avatar avatar-md position-relative text-center rounded-circle"
+                                style={{
+                                  height: "25px",
+                                  width: "25px",
+                                  border: "2px solid #fff",
+                                  marginLeft: "-8%",
+                                }}
+                              >
+                                <img src={Kyra} class="avatar-img w-100" />
+                              </div>
+                            </div>
+
+                            <Link
+                              to="/"
+                              className="text-secondary text-decoration-none font_bold"
+                            >
+                              Sakshi Bhuraita and 9 others
+                            </Link>
+                          </div>
+                        </p>
+                      </div>
+
+                      <div className="moreinfo d-flex">
+                        <Button className="bigbutton px-4 border-0 p-2 rounded-pill">
+                          View Profile
+                        </Button>
+                      </div>
+                    </div>
+                  </Card.Body>
+                  <hr className="m-0 p-0" />
+                  <Card.Body>
+                    <div className="d-flex justify-content-between align-items-center ">
+                      <div className="profile_head d-flex">
+                        <div
+                          className="avatar avatar-md position-relative text-center rounded-circle"
+                          style={{ height: "80px", width: "80px" }}
+                        >
+                          <img src={Jordan} class="avatar-img w-100" />
+                        </div>
+                        &nbsp;&nbsp;
+                        <p className="font_bolder">
+                          Jordan William
+                          <p className="text-secondary m-0 ">Angel Startup</p>
+                          <div className="d-flex">
+                            <div className="d-flex">
+                              <div
+                                className="avatar avatar-md position-relative text-center rounded-circle"
+                                style={{
+                                  height: "25px",
+                                  width: "25px",
+                                  border: "2px solid #fff",
+                                }}
+                              >
+                                <img src={Mutual} class="avatar-img w-100" />
+                              </div>
+                              <div
+                                className="avatar avatar-md position-relative text-center rounded-circle"
+                                style={{
+                                  height: "25px",
+                                  width: "25px",
+                                  border: "2px solid #fff",
+                                  marginLeft: "-8%",
+                                }}
+                              >
+                                <img src={Mutualo} class="avatar-img w-100" />
+                              </div>
+                              <div
+                                className="avatar avatar-md position-relative text-center rounded-circle"
+                                style={{
+                                  height: "25px",
+                                  width: "25px",
+                                  border: "2px solid #fff",
+                                  marginLeft: "-8%",
+                                }}
+                              >
+                                <img src={Steve} class="avatar-img w-100" />
+                              </div>
+                              <div
+                                className="avatar avatar-md position-relative text-center rounded-circle"
+                                style={{
+                                  height: "25px",
+                                  width: "25px",
+                                  border: "2px solid #fff",
+                                  marginLeft: "-8%",
+                                }}
+                              >
+                                <img src={Kyra} class="avatar-img w-100" />
+                              </div>
+                            </div>
+
+                            <Link
+                              to="/"
+                              className="text-secondary text-decoration-none font_bold"
+                            >
+                              Sakshi Bhuraita and 9 others
+                            </Link>
+                          </div>
+                        </p>
+                      </div>
+
+                      <div className="moreinfo d-flex">
+                        <Button className="bigbutton px-4 border-0 p-2 rounded-pill">
+                          View Profile
+                        </Button>
+                      </div>
+                    </div>
+                  </Card.Body>
+                  <hr className="m-0 p-0" />
                   <Card.Body className="p-4 py-2">
                     <div className="d-flex justify-content-between align-items-center ">
                       <div className="profile_head d-flex">
