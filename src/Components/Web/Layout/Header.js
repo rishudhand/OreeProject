@@ -1,6 +1,14 @@
 import React, { useState } from "react";
 import "./Header.scss";
-import { Modal, Navbar, Container, Nav, Form, Button } from "react-bootstrap";
+import {
+  Modal,
+  Navbar,
+  Dropdown,
+  Container,
+  Nav,
+  Form,
+  Button,
+} from "react-bootstrap";
 import Logo from "../../../Assets/logo/logo.png";
 import Search from "../../../Assets/icon/search.png";
 import Home from "../../../Assets/icon/home.png";
@@ -13,11 +21,18 @@ import { BsChevronDown } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import Profile from "../../../Assets/image/avtar.png";
 import History from "../../../Assets/icon/history.png";
+import Modallayout from "../Popup/Modallayout";
+import Signout from "../Popup/Signout";
 export default function Header() {
   const [recentshow, recentsetShow] = useState(false);
 
   const recenthandleShow = () => recentsetShow(true);
   const recenthandleClose = () => recentsetShow(false);
+
+  const [logutshow, logutsetShow] = useState(false);
+
+  const loguthandleShow = () => logutsetShow(true);
+  const loguthandleClose = () => logutsetShow(false);
   return (
     <div className="container p-2 header bg-white">
       <Navbar expand="lg" className=" desktop_navbar">
@@ -67,7 +82,7 @@ export default function Header() {
               navbarScroll
             >
               <Nav.Link className="text-center ms-4">
-                <Link to="/" className="text-decoration-none">
+                <Link to="/home" className="text-decoration-none">
                   <img src={Home} alt="" />
                   <p className="text-dark h6">Home</p>
                 </Link>
@@ -85,35 +100,103 @@ export default function Header() {
                   <p className="text-dark h6">Deals</p>
                 </Link>
               </Nav.Link>
-              <Nav.Link className="text-center ms-4">
+              <Nav.Link className="text-center ms-4 position-relative">
                 <Link to="/mynotification" className="text-decoration-none">
                   <img src={Notification} alt="" />
                   <p className="text-dark h6">My Notification</p>
                 </Link>
+                <p
+                  className="bg-danger h6 text-white m-0 position-absolute rounded-circle"
+                  style={{
+                    width: "18px",
+                    height: "18px",
+                    top: "10%",
+                    right: "38%",
+                  }}
+                >
+                  5
+                </p>
               </Nav.Link>
-              <Nav.Link className="text-center ms-4">
+              <Nav.Link className="text-center ms-4 position-relative">
                 <Link to="/chat" className="text-decoration-none">
                   <img src={Chat} alt="" />
                   <p className="text-dark h6">Chat</p>
                 </Link>
+                <p
+                  className="bg-danger h6 text-white m-0 position-absolute rounded-circle"
+                  style={{
+                    width: "18px",
+                    height: "18px",
+                    top: "5px",
+                    right: "0",
+                  }}
+                >
+                  5
+                </p>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
-          <div className="d-flex  justify-content-end" style={{ width: "20%" }}>
-            <div
-              className="avatar avatar-md position-relative text-center justify-content-center rounded-circle"
-              style={{ height: "55px", width: "55px" }}
+
+          <Dropdown>
+            <Dropdown.Toggle
+              className="bg-transparent border-0"
+              id="dropdown-basic"
             >
-              <img src={Avtar} class="avatar-img w-100" />
-            </div>
-            &nbsp;&nbsp;
-            <p className="h4">
-              John Doe
-              <p className="text-secondary text_bold h6">Investor</p>
-            </p>
-            &nbsp;&nbsp;
-            <BsChevronDown className="mt-2" />
-          </div>
+              <div className="d-flex ">
+                <div
+                  className="avatar avatar-md position-relative text-center justify-content-center rounded-circle"
+                  style={{ height: "55px", width: "55px" }}
+                >
+                  <img src={Avtar} class="avatar-img w-100" />
+                </div>
+                &nbsp;&nbsp;
+                <p className="h4 navyColor text-start">
+                  John Doe
+                  <p className="text-secondary text_bold h6">Investor</p>
+                </p>
+                &nbsp;&nbsp;
+                <BsChevronDown className="mt-2 text-dark" />
+              </div>
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu>
+              <Dropdown.Item>
+                <Link to="/profile" className="text-decoration-none">
+                  <div className="d-flex ">
+                    <div
+                      className="avatar avatar-md position-relative text-center justify-content-center rounded-circle"
+                      style={{ height: "55px", width: "55px" }}
+                    >
+                      <img src={Avtar} class="avatar-img w-100" />
+                    </div>
+                    &nbsp;&nbsp;
+                    <p className="h4 navyColor text-start">
+                      John Doe
+                      <p className="text-secondary text_bold h6">Investor</p>
+                    </p>
+                    &nbsp;&nbsp;
+                  </div>
+                </Link>
+              </Dropdown.Item>
+              <hr className="m-0" />
+              <Dropdown.Item className="text-dark font_bolder">
+                Account
+              </Dropdown.Item>
+              <Dropdown.Item className="text-dark">
+                <Link to="/setting" className="text-dark text-decoration-none">
+                  Setting
+                </Link>
+              </Dropdown.Item>
+              <Dropdown.Item className="text-dark">Help </Dropdown.Item>
+              <hr className="m-0" />
+              <Dropdown.Item
+                className="text-secondary font_bolder"
+                onClick={loguthandleShow}
+              >
+                Sign Out
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
         </Container>
       </Navbar>
       <Modal
@@ -191,6 +274,9 @@ export default function Header() {
           </p>
         </Modal.Body>
       </Modal>
+      <Modallayout show={logutshow} handleChange={loguthandleClose}>
+        <Signout />
+      </Modallayout>
     </div>
   );
 }

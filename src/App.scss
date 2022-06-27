@@ -4,6 +4,9 @@
 .navyColor{
     Color: $navyblue;
 }
+.text_lightgreen{
+    color:$lightgreen;
+}
 .lightgreen{
     background-color: $lightgreen;
 }
@@ -65,4 +68,18 @@ input#custom-switch {
 .add_more .modal-dialog {
     width: 600px !important;
     max-width: 600px;
+}
+.btn-check:active+.btn-primary:focus, .btn-check:checked+.btn-primary:focus, .btn-primary.active:focus, .btn-primary:active:focus, .show>.btn-primary.dropdown-toggle:focus{
+    box-shadow: none !important;
+}
+.form-select:focus {
+    border-color: none !important;
+    outline: 0;
+    box-shadow: none !important;
+}
+.right_notification .bigbutton {
+    height: 40px;
+}
+.btn-check:active+.btn-success:focus, .btn-check:checked+.btn-success:focus, .btn-success.active:focus, .btn-success:active:focus, .show>.btn-success.dropdown-toggle:focus{
+    box-shadow: none !important;
 }

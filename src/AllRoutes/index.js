@@ -31,6 +31,8 @@ import Investorsignup from "../Components/Pages/Signup/Investorsignup";
 import Fullpost from "../Components/Web/Pages/FullPost/Fullpost";
 import Fullpostone from "../Components/Web/Pages/FullPost/Fullpostone";
 import Agreement from "../Components/Web/Pages/FullPost/Agreement";
+import Profile from "../Components/Web/Pages/Profile/Profile";
+import Setting from "../Components/Web/Pages/Setting/Setting";
 export default function index() {
   const getRoutes = (routes) => {
     return routes.map((prop, key) => {
@@ -88,7 +90,8 @@ export default function index() {
         <Route path="/deal" element={<Deal />} />
         <Route path="/onsearch" element={<Onsearch />} />
         <Route path="/chat" element={<Chat />} />
-
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/setting" element={<Setting />} />
         {getRoutes(PublicRoutes)}
       </Routes>
     </div>

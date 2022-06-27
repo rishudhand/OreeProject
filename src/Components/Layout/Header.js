@@ -9,7 +9,7 @@ export default function Header() {
     <div className="header">
       <Navbar expand="lg" className="p-2">
         <Container className="px-4 brand">
-          <Navbar.Brand href="#" className="w-75">
+          <Navbar.Brand to="/" className="w-75">
             <img src={Logo} alt="" className="logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" className="" />
@@ -27,7 +27,7 @@ export default function Header() {
               </Nav.Link>
 
               <Nav.Link>
-                <Link to="/Stepone" className="text-decoration-none">
+                <Link to="/selectrole" className="text-decoration-none">
                   &nbsp; <span className="text-dark h6">Signup</span>
                 </Link>
               </Nav.Link>

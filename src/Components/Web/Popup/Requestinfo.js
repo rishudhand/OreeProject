@@ -3,7 +3,7 @@ import { Modal, Button } from "react-bootstrap";
 import Vector from "../../../Assets/image/vector.png";
 import Modallayout from "./Modallayout";
 import Proposalsend from "./Proposalsend.js";
-
+import { Link } from "react-router-dom";
 export default function Requestinfo() {
   // proposal send
   const [show, setShow] = useState(false);
@@ -19,12 +19,14 @@ export default function Requestinfo() {
             Do you want chat first or send proposal?
           </p>
           <div className="d-flex justify-content-center">
-            <Button
-              className="bigbutton px-5 border-0 ms-2 p-2 rounded-pill"
-              type="submit"
-            >
-              Chat
-            </Button>
+            <Link to="/chat">
+              <Button
+                className="bigbutton px-5 border-0 ms-2 p-2 rounded-pill"
+                type="submit"
+              >
+                Chat
+              </Button>
+            </Link>
             <Button
               className="bg-white text-dark font_bold px-4 border border-dark ms-2 p-2 rounded-pill"
               onClick={handleShow}

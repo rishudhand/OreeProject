@@ -266,7 +266,7 @@ export default function Chat() {
                   <hr className="m-0" />
                   <Card.Body className="px-3">
                     <Row>
-                      <Col xs={6}>
+                      <Col xs={10} md={6}>
                         <p
                           className="gray_light text-dark m-0 font_bold p-3"
                           style={{ borderRadius: "15px 15px 15px 0px" }}
@@ -276,11 +276,11 @@ export default function Chat() {
                         </p>
                         <small>10:30 AM</small>
                       </Col>
-                      <Col xs={6}></Col>
+                      <Col xs={4} md={6}></Col>
                     </Row>
                     <Row>
-                      <Col xs={6}></Col>
-                      <Col xs={6}>
+                      <Col xs={4} md={6}></Col>
+                      <Col xs={10} md={6}>
                         <p
                           className="bigbutton m-0 text-white font_bold p-3 text-end"
                           style={{ borderRadius: "15px 15px 0px 15px" }}
@@ -292,7 +292,7 @@ export default function Chat() {
                       </Col>
                     </Row>
                     <Row>
-                      <Col xs={6}>
+                      <Col xs={10} md={6}>
                         <p
                           className="gray_light m-0 text-dark font_bold p-3"
                           style={{ borderRadius: "15px 15px 15px 0px" }}
@@ -302,11 +302,11 @@ export default function Chat() {
                         </p>
                         <small>10:30 AM</small>
                       </Col>
-                      <Col xs={6}></Col>
+                      <Col xs={4} md={6}></Col>
                     </Row>
                     <Row>
-                      <Col xs={6}></Col>
-                      <Col xs={6}>
+                      <Col xs={4} md={6}></Col>
+                      <Col xs={10} md={6}>
                         <p
                           className="bigbutton m-0 text-white font_bold p-3 text-end"
                           style={{ borderRadius: "15px 15px 0px 15px" }}
@@ -321,8 +321,8 @@ export default function Chat() {
                       Today
                     </p>
                     <Row className="mb-3">
-                      <Col xs={6}></Col>
-                      <Col xs={6}>
+                      <Col xs={4} md={6}></Col>
+                      <Col xs={10} md={6}>
                         <p
                           className="bigbutton m-0 text-white font_bold p-3 text-end"
                           style={{ borderRadius: "15px 15px 0px 15px" }}
@@ -352,13 +352,13 @@ export default function Chat() {
                       </div>
                       <div className="btngroup w-25">
                         <Button
-                          className="bigbutton ms-4 border-0  p-3"
+                          className="bigbutton ms-3 border-0  p-3"
                           type="submit"
                         >
                           <img src={Mic} alt="" />
                         </Button>
                         <Button
-                          className="bigbutton ms-4 border-0 p-3"
+                          className="bigbutton ms-3 border-0 p-3"
                           type="submit"
                         >
                           <img src={Send} alt="" />

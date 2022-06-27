@@ -77,11 +77,12 @@ export default function Login() {
                         className="mb-4 d-flex justify-content-between"
                         controlId="formBasicCheckbox"
                       >
-                        <Link to="/" className="text-decoration-none">
+                        <p>
                           <Form.Check type="radio" inline name="group1" />
-                          &nbsp;
+
                           <span className="h6 navyColor">Remember me</span>
-                        </Link>
+                        </p>
+
                         <Link
                           to="/forgetpassword"
                           className="text-decoration-none"
@@ -93,12 +94,14 @@ export default function Login() {
                         </Link>
                       </Form.Group>
                       <Form.Group className="mb-3">
-                        <Button
-                          className="bigbutton rounded-pill border-0 w-100 p-3"
-                          type="submit"
-                        >
-                          Log In
-                        </Button>
+                        <Link to="/home">
+                          <Button
+                            className="bigbutton rounded-pill border-0 w-100 p-3"
+                            type="submit"
+                          >
+                            Log In
+                          </Button>
+                        </Link>
                       </Form.Group>
                       <p className="text-center mb-3 text-dark other position-relative font_bold">
                         Or Login With
@@ -116,7 +119,7 @@ export default function Login() {
                       </div>
                       <p className="text-secondary d-flex justify-content-center align-items-center font_bold">
                         Don’t have any account?
-                        <Link to="/Stepone" className="text-decoration-none">
+                        <Link to="/selectrole" className="text-decoration-none">
                           &nbsp;
                           <span className="h6 m-0 p-0 navyColor font_bolder">
                             Sign up

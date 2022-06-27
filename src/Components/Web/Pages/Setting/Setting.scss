@@ -1,0 +1,12 @@
+@import "../../../../Styles/Variables.scss";
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+   
+        color: black;
+        background: none !important;
+        font-weight: 700;
+   
+}
+.nav-pills .nav-link{
+    color:$gray;
+}
