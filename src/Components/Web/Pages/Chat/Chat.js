@@ -70,7 +70,8 @@ export default function Chat() {
                           width: "49px",
                           height: "49px",
                           lineHeight: "15px",
-                          right: "2%",
+                          right: "1%",
+                          top: "5%", 
                         }}
                       >
                         <img src={Search} alt="" />
@@ -354,12 +355,14 @@ export default function Chat() {
                         <Button
                           className="bigbutton ms-3 border-0  p-3"
                           type="submit"
+                          style={{ lineHeight: "10px" }}
                         >
                           <img src={Mic} alt="" />
                         </Button>
                         <Button
                           className="bigbutton ms-3 border-0 p-3"
                           type="submit"
+                          style={{ lineHeight: "10px" }}
                         >
                           <img src={Send} alt="" />
                         </Button>

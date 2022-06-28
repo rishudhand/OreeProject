@@ -16,6 +16,9 @@
 .gray_light{
     background-color: $gray_light;
 }
+.bg_red{
+    background-color: $red;
+}
 .red{
     color: $red;
 }
@@ -78,6 +81,9 @@ input#custom-switch {
     box-shadow: none !important;
 }
 .right_notification .bigbutton {
+    height: 40px;
+}
+.right_notification .lightgreen {
     height: 40px;
 }
 .btn-check:active+.btn-success:focus, .btn-check:checked+.btn-success:focus, .btn-success.active:focus, .btn-success:active:focus, .show>.btn-success.dropdown-toggle:focus{

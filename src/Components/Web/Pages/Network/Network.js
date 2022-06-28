@@ -49,7 +49,7 @@ export default function Network() {
                     <Nav.Item>
                       <Nav.Link
                         eventKey="first"
-                        className="text-secondary font_bold"
+                        className="text-secondary ps-0 font_bold"
                       >
                         Investor Connection
                       </Nav.Link>
@@ -57,7 +57,7 @@ export default function Network() {
                     <Nav.Item>
                       <Nav.Link
                         eventKey="second"
-                        className="text-secondary font_bold"
+                        className="text-secondary ps-0 font_bold"
                       >
                         Startup Connection
                       </Nav.Link>
