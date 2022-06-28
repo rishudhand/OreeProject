@@ -26,6 +26,7 @@ import Header from "../../Layout/Header";
 import Footer from "../../Layout/Footer";
 import Board from "../../../../Assets/icon/board.png";
 import Post from "../.../../../../../Assets/icon/post.png";
+import Createdeal from "../../Popup/Createdeal.js";
 export default function Home() {
   const [show, setShow] = useState(false);
 
@@ -36,6 +37,11 @@ export default function Home() {
 
   const moreinfohandleShow = () => moreinfosetShow(true);
   const moreinfohandleClose = () => moreinfosetShow(false);
+
+  const [createdealshow, createdealsetShow] = useState(false);
+
+  const createdealhandleShow = () => createdealsetShow(true);
+  const createdealhandleClose = () => createdealsetShow(false);
 
   const [commentshow, commentsetShow] = useState(false);
   console.log(commentshow);
@@ -211,7 +217,10 @@ export default function Home() {
                       </div>
 
                       <div className="moreinfo d-flex">
-                        <Button className="bg-transparent  p-2 border-0">
+                        <Button
+                          className="bg-transparent  p-2 border-0 "
+                          onClick={createdealhandleShow}
+                        >
                           <img src={Post} alt="" />
                         </Button>
                       </div>
@@ -277,16 +286,19 @@ export default function Home() {
                         </Col>
                       </Row>
                     </Link>
-                    <div className="d-flex justify-content-end">
-                      <button
-                        onClick={() => commentsetShow(!commentshow)}
-                        className=" bg-transparent border-0 text-decoration-nonetext-dark me-5"
-                      >
-                        See More...
-                      </button>
-                    </div>
+                    <Row className=" justify-content-end">
+                      <Col xs={8}></Col>
+                      <Col xs={4} className="text-center">
+                        <button
+                          onClick={() => commentsetShow(!commentshow)}
+                          className=" bg-transparent border-0 text-decoration-nonetext-dark"
+                        >
+                          See More...
+                        </button>
+                      </Col>
+                    </Row>
 
-                    <Row className="py-3">
+                    <Row className="py-3 align-items-center">
                       <Col xs={9}>
                         <div className="d-flex align-items-center">
                           <img src={Done} alt="" />
@@ -296,7 +308,7 @@ export default function Home() {
                         </div>
                       </Col>
                       <Col xs={3}>
-                        <p className="font_bold">22 comments</p>
+                        <p className="font_bold m-0">22 comments</p>
                       </Col>
                     </Row>
                   </Card.Body>
@@ -484,16 +496,16 @@ export default function Home() {
                         <p className="font_bold">Single Investment</p>
                       </Col>
                     </Row>
-                    <div className="d-flex justify-content-end">
-                      <Link
-                        to="/"
-                        className="text-decoration-none text-dark me-5"
-                      >
-                        See More...
-                      </Link>
-                    </div>
+                    <Row className=" justify-content-end">
+                      <Col xs={8}></Col>
+                      <Col xs={4} className="text-center">
+                        <button className=" bg-transparent border-0 text-decoration-nonetext-dark">
+                          See More...
+                        </button>
+                      </Col>
+                    </Row>
 
-                    <Row className="py-3">
+                    <Row className=" py-3 align-items-center">
                       <Col xs={9}>
                         <div className="d-flex align-items-center">
                           <img src={Done} alt="" />
@@ -503,7 +515,7 @@ export default function Home() {
                         </div>
                       </Col>
                       <Col xs={3}>
-                        <p className="font_bold">22 comments</p>
+                        <p className="font_bold m-0">22 comments</p>
                       </Col>
                     </Row>
                   </Card.Body>
@@ -558,15 +570,15 @@ export default function Home() {
                         <p className="font_bold">Single Investment</p>
                       </Col>
                     </Row>
-                    <div className="d-flex justify-content-end">
-                      <Link
-                        to="/"
-                        className="text-decoration-none text-dark me-5"
-                      >
-                        See More...
-                      </Link>
-                    </div>
-                    <Row className="py-3">
+                    <Row className=" justify-content-end">
+                      <Col xs={8}></Col>
+                      <Col xs={4} className="text-center">
+                        <button className=" bg-transparent border-0 text-decoration-nonetext-dark">
+                          See More...
+                        </button>
+                      </Col>
+                    </Row>
+                    <Row className=" py-3 align-items-center">
                       <Col xs={9}>
                         <div className="d-flex align-items-center">
                           <img src={Done} alt="" />
@@ -576,7 +588,7 @@ export default function Home() {
                         </div>
                       </Col>
                       <Col xs={3}>
-                        <p className="font_bold">22 comments</p>
+                        <p className="font_bold m-0">22 comments</p>
                       </Col>
                     </Row>
                   </Card.Body>
@@ -759,6 +771,9 @@ export default function Home() {
         </Modallayout>
         <Modallayout show={moreinfoshow} handleChange={moreinfohandleClose}>
           <RequestMoreinfo />
+        </Modallayout>
+        <Modallayout show={createdealshow} handleChange={createdealhandleClose}>
+          <Createdeal />
         </Modallayout>
       </div>
       <Footer />

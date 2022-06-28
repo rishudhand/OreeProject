@@ -33,6 +33,8 @@ import Fullpostone from "../Components/Web/Pages/FullPost/Fullpostone";
 import Agreement from "../Components/Web/Pages/FullPost/Agreement";
 import Profile from "../Components/Web/Pages/Profile/Profile";
 import Setting from "../Components/Web/Pages/Setting/Setting";
+import Startupdeal from "../Components/Web/Startup/Startupdeal";
+import Startupstepone from "../Components/Pages/Signup/Startupstepone";
 export default function index() {
   const getRoutes = (routes) => {
     return routes.map((prop, key) => {
@@ -92,6 +94,8 @@ export default function index() {
         <Route path="/chat" element={<Chat />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/setting" element={<Setting />} />
+        <Route path="/startupdeal" element={<Startupdeal />} />
+        <Route path="/startupstepone" element={<Startupstepone />} />
         {getRoutes(PublicRoutes)}
       </Routes>
     </div>

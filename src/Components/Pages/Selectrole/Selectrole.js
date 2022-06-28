@@ -59,7 +59,10 @@ export default function Selectrole() {
                         </Link>
                       </Form.Group>
                       <Form.Group className="mb-3 bg_light rounded-3">
-                        <Link to="/" className="text-decoration-none ">
+                        <Link
+                          to="/startupstepone"
+                          className="text-decoration-none "
+                        >
                           <div className="d-flex align-items-center p-3">
                             <div
                               className="role_img bg-white rounded-circle"
