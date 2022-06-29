@@ -32,24 +32,24 @@ export default function Addinterest() {
                 </p>
               </div>
               <p className="h5">Your interest</p>
-              <div className="d-flex flex-wrap">
-                <p className="bigbutton rounded-pill p-2 ms-2 text-white mb-3">
+              <div className="d-flex flex-wrap justify-content-between">
+                <p className="bigbutton rounded-pill p-2  text-white mb-3">
                   UX Research &nbsp;
                   <img src={Cancel} alt="" />
                 </p>
-                <p className="bigbutton rounded-pill p-2 ms-2 text-white mb-3">
+                <p className="bigbutton rounded-pill p-2  text-white mb-3">
                   UX Research &nbsp;
                   <img src={Cancel} alt="" />
                 </p>
-                <p className="bigbutton rounded-pill p-2 ms-2 text-white mb-3">
+                <p className="bigbutton rounded-pill p-2  text-white mb-3">
                   UX Research &nbsp;
                   <img src={Cancel} alt="" />
                 </p>
-                <p className="bigbutton rounded-pill p-2 ms-2 text-white mb-3">
+                <p className="bigbutton rounded-pill p-2  text-white mb-3">
                   UX Design &nbsp;
                   <img src={Cancel} alt="" />
                 </p>
-                <p className="bigbutton rounded-pill p-2 ms-2 text-white mb-3">
+                <p className="bigbutton rounded-pill p-2 text-white mb-3">
                   UX Research &nbsp;
                   <img src={Cancel} alt="" />
                 </p>

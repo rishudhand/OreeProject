@@ -24,6 +24,7 @@ import Modallayout from "../../Popup/Modallayout.js";
 import Editprofile from "../../Popup/Editprofile.js";
 import Addinterest from "../../Popup/Addinterest";
 import Board from "../../../../Assets/icon/board.png";
+import Globe from "../../../../Assets/icon/globe.png";
 export default function Profile() {
   const [Editshow, EditsetShow] = useState(false);
 
@@ -164,10 +165,16 @@ export default function Profile() {
                         13 mutual connections
                       </Link>
                     </div>
-                    <p className="m-0">
-                      <img src={Cake} alt="" />
-                      &nbsp;24 January,2022
-                    </p>
+                    <div className="d-flex">
+                      <p className="m-0">
+                        <img src={Globe} alt="" /> &nbsp;Sahibzada Ajit Singh
+                        Nagar, Punjab
+                      </p>
+                      <p className="m-0 ms-2">
+                        <img src={Cake} alt="" />
+                        &nbsp;24 January,2022
+                      </p>
+                    </div>
                   </div>
                 </div>
                 <Card className="mb-3">

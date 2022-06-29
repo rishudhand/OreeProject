@@ -183,14 +183,18 @@ export default function Header() {
                 Account
               </Dropdown.Item>
               <Dropdown.Item className="text-dark">
-                <Link to="/setting" className="text-dark text-decoration-none">
+                <Link
+                  to="/setting"
+                  role={Button}
+                  className="w-100 d-block text-dark text-decoration-none"
+                >
                   Setting
                 </Link>
               </Dropdown.Item>
               <Dropdown.Item className="text-dark">Help </Dropdown.Item>
               <hr className="m-0" />
               <Dropdown.Item
-                className="text-secondary font_bolder"
+                className="d-block w-100 text-secondary font_bolder"
                 onClick={loguthandleShow}
               >
                 Sign Out

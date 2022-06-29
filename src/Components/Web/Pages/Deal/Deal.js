@@ -65,7 +65,7 @@ export default function Deal() {
                       printer took a galley of type and scrambled it to make a
                       type specimen book.
                     </p>
-                    <hr className="m-0" />
+                    <hr className="" />
                     <div className="d-flex font_bold justify-content-between">
                       <p className="text-secondary">My Connections</p>
                       <p className="text-dark">5k+</p>
@@ -310,7 +310,7 @@ export default function Deal() {
                   style={{ background: "#ffffff" }}
                 >
                   <Card.Body className="p-4 py-2 d-flex justify-content-between align-items-center">
-                    <div className="d-flex ">
+                    <div className="d-flex align-items-center">
                       <div
                         className="avatar avatar-md position-relative text-center rounded-circle"
                         style={{ height: "80px", width: "80px" }}
@@ -318,7 +318,7 @@ export default function Deal() {
                         <img src={Nextuser} class="avatar-img w-100" />
                       </div>
                       &nbsp;&nbsp;
-                      <p className="font_bolder">
+                      <p className="font_bolder m-0">
                         Jullia William
                         <p className="text-secondary m-0 ">Startup</p>
                       </p>
@@ -326,7 +326,7 @@ export default function Deal() {
                     <p className="text-danger font_bolder">Rejected</p>
                   </Card.Body>
                   <hr className="m-0" />
-                  <Card.Body className="px-3">
+                  <Card.Body className="px-4">
                     <Row>
                       <Col xs={8}>
                         <p className="font_bolder">Deal Name</p>
@@ -343,13 +343,13 @@ export default function Deal() {
                     </Row>
                   </Card.Body>
                 </Card>
-                <hr className="p-0" />
+
                 <Card
                   className="border-0 mb-3"
                   style={{ background: "#ffffff" }}
                 >
                   <Card.Body className="p-4 py-2 d-flex justify-content-between align-items-center">
-                    <div className="d-flex ">
+                    <div className="d-flex align-items-center">
                       <div
                         className="avatar avatar-md position-relative text-center rounded-circle"
                         style={{ height: "80px", width: "80px" }}
@@ -357,7 +357,7 @@ export default function Deal() {
                         <img src={Nextuser} class="avatar-img w-100" />
                       </div>
                       &nbsp;&nbsp;
-                      <p className="font_bolder">
+                      <p className="font_bolder m-0">
                         Jullia William
                         <p className="text-secondary m-0 ">Startup</p>
                       </p>
@@ -365,7 +365,7 @@ export default function Deal() {
                     <p className="text_lightgreen font_bolder">Accepted</p>
                   </Card.Body>
                   <hr className="m-0" />
-                  <Card.Body className="px-3">
+                  <Card.Body className="px-4">
                     <Row>
                       <Col xs={8}>
                         <p className="font_bolder">Deal Name</p>

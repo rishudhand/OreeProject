@@ -115,14 +115,20 @@ export default function Setting() {
                               <Form.Group>
                                 <div className="d-flex justify-content-between">
                                   Public
-                                  <Form.Check aria-label="option 1" />
+                                  <Form.Check
+                                    type="switch"
+                                    id="custom-switch"
+                                  />
                                 </div>
                               </Form.Group>
                               <hr />
                               <Form.Group>
                                 <div className="d-flex justify-content-between">
                                   Private
-                                  <Form.Check aria-label="option 1" />
+                                  <Form.Check
+                                    type="switch"
+                                    id="custom-switch"
+                                  />
                                 </div>
                               </Form.Group>
                             </Tab.Pane>
@@ -1233,7 +1239,7 @@ export default function Setting() {
                                 Change Password
                               </Card.Header>
                               <Row>
-                                <Col xs={12} md={8}>
+                                <Col xs={12} md={6}>
                                   <Form>
                                     <Form.Group
                                       className="mb-3"

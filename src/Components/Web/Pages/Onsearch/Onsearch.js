@@ -18,6 +18,7 @@ import Filtercheck from "../../Popup/Filter";
 import Header from "../../Layout/Header";
 import Footer from "../../Layout/Footer";
 import Board from "../../../../Assets/icon/board.png";
+import Contract from "../../../../Assets/image/contract.png";
 export default function Onsearch() {
   const [filtershow, filtersetShow] = useState(false);
 
@@ -49,7 +50,7 @@ export default function Onsearch() {
                   className="border-0 mb-3"
                   style={{ background: "#ffffff" }}
                 >
-                  <Card.Body className="p-4 py-2">
+                  <Card.Body className="p-3 py-2">
                     <div className="d-flex justify-content-between align-items-center ">
                       <div className="profile_head d-flex">
                         <div
@@ -127,7 +128,7 @@ export default function Onsearch() {
                     </div>
                   </Card.Body>
                   <hr className="m-0" />
-                  <Card.Body className="p-4 py-2">
+                  <Card.Body className="p-3 py-2">
                     <div className="d-flex justify-content-between align-items-center ">
                       <div className="profile_head d-flex">
                         <div
@@ -205,7 +206,7 @@ export default function Onsearch() {
                     </div>
                   </Card.Body>
                   <hr className="m-0" />
-                  <Card.Body className="p-4 py-2">
+                  <Card.Body className="p-3 py-2">
                     <div className="d-flex justify-content-between align-items-center ">
                       <div className="profile_head d-flex">
                         <div
@@ -284,7 +285,7 @@ export default function Onsearch() {
                   </Card.Body>
                   <hr className="m-0" />
                   <p className="text-dark px-4 p-2 m-0 font_bold">Startups</p>
-                  <Card.Body className="p-4 py-2">
+                  <Card.Body className="p-3 py-2">
                     <div className="d-flex justify-content-between align-items-center ">
                       <div className="profile_head d-flex">
                         <div
@@ -362,7 +363,7 @@ export default function Onsearch() {
                     </div>
                   </Card.Body>
                   <hr className="m-0" />
-                  <Card.Body className="p-4 py-2">
+                  <Card.Body className="p-3 py-2">
                     <div className="d-flex justify-content-between align-items-center ">
                       <div className="profile_head d-flex">
                         <div
@@ -441,7 +442,7 @@ export default function Onsearch() {
                   </Card.Body>
                   <hr className="m-0" />
                   <p className="text-dark px-4 p-2 m-0 font_bold">Investor</p>
-                  <Card.Body className="p-4 py-2">
+                  <Card.Body className="p-3 py-2">
                     <div className="d-flex justify-content-between align-items-center ">
                       <div className="profile_head d-flex">
                         <div
@@ -519,7 +520,7 @@ export default function Onsearch() {
                     </div>
                   </Card.Body>
                   <hr className="m-0" />
-                  <Card.Body className="p-4 py-2">
+                  <Card.Body className="p-3 py-2">
                     <div className="d-flex justify-content-between align-items-center ">
                       <div className="profile_head d-flex">
                         <div
@@ -687,7 +688,7 @@ export default function Onsearch() {
                   className="border-0 mb-3"
                   style={{ background: "#ffffff" }}
                 >
-                  <Card.Body className="p-4 py-2">
+                  <Card.Body className="p-3 py-2">
                     <div className="d-flex justify-content-between align-items-center ">
                       <div className="profile_head d-flex">
                         <div
@@ -765,7 +766,7 @@ export default function Onsearch() {
                     </div>
                   </Card.Body>
                   <hr className="m-0" />
-                  <Card.Body className="p-4 py-2">
+                  <Card.Body className="p-3 py-2">
                     <div className="d-flex justify-content-between align-items-center ">
                       <div className="profile_head d-flex">
                         <div
@@ -843,7 +844,7 @@ export default function Onsearch() {
                     </div>
                   </Card.Body>
                   <hr className="m-0" />
-                  <Card.Body className="p-4 py-2">
+                  <Card.Body className="p-3 py-2">
                     <div className="d-flex justify-content-between align-items-center ">
                       <div className="profile_head d-flex">
                         <div
@@ -923,7 +924,7 @@ export default function Onsearch() {
 
                   <hr className="m-0" />
 
-                  <Card.Body className="p-4 py-2">
+                  <Card.Body className="p-3 py-2">
                     <div className="d-flex justify-content-between align-items-center ">
                       <div className="profile_head d-flex">
                         <div
@@ -1001,7 +1002,7 @@ export default function Onsearch() {
                     </div>
                   </Card.Body>
                   <hr className="m-0" />
-                  <Card.Body className="p-4 py-2">
+                  <Card.Body className="p-3 py-2">
                     <div className="d-flex justify-content-between align-items-center ">
                       <div className="profile_head d-flex">
                         <div
@@ -1080,7 +1081,7 @@ export default function Onsearch() {
                   </Card.Body>
                   <hr className="m-0" />
 
-                  <Card.Body className="p-4 py-2">
+                  <Card.Body className="p-3 py-2">
                     <div className="d-flex justify-content-between align-items-center ">
                       <div className="profile_head d-flex">
                         <div
@@ -1158,7 +1159,7 @@ export default function Onsearch() {
                     </div>
                   </Card.Body>
                   <hr className="m-0" />
-                  <Card.Body className="p-4 py-2">
+                  <Card.Body className="p-3 py-2">
                     <div className="d-flex justify-content-between align-items-center ">
                       <div className="profile_head d-flex">
                         <div
@@ -1241,7 +1242,7 @@ export default function Onsearch() {
                   className="border-0 mb-3"
                   style={{ background: "#ffffff" }}
                 >
-                  <Card.Body className="p-5">
+                  <Card.Body className="p-3">
                     <div className="d-flex justify-content-between align-items-center ">
                       <div className="profile_head d-flex">
                         <div
@@ -1265,7 +1266,7 @@ export default function Onsearch() {
                     </div>
                   </Card.Body>
                   <hr className="m-0 p-0" />
-                  <p className="text-dark font_bolder">Board Member</p>
+                  <p className="text-dark font_bolder p-3 m-0">Board Member</p>
                   <Card.Body>
                     <div className="d-flex justify-content-between align-items-center ">
                       <div className="profile_head d-flex">
@@ -1422,7 +1423,7 @@ export default function Onsearch() {
                     </div>
                   </Card.Body>
                   <hr className="m-0 p-0" />
-                  <Card.Body className="p-4 py-2">
+                  <Card.Body className="p-3 py-2">
                     <div className="d-flex justify-content-between align-items-center ">
                       <div className="profile_head d-flex">
                         <div
@@ -1482,7 +1483,7 @@ export default function Onsearch() {
                     </Row>
                   </Card.Body>
                   <hr className="m-0" />
-                  <Card.Body className="p-4 py-2">
+                  <Card.Body className="p-3 py-2">
                     <div className="d-flex justify-content-between align-items-center ">
                       <div className="profile_head d-flex">
                         <div
@@ -1544,6 +1545,36 @@ export default function Onsearch() {
               </div>
             </Col>
             <Col md={3}>
+              <Card
+                className="border-0 mb-3 sidebar_profile"
+                style={{
+                  backgroundColor: "#ffffff",
+                }}
+              >
+                <Card.Body className="p-2">
+                  <Row className="align-items-center">
+                    <Col xs={7}>
+                      <p className="navyColor h5 font_bolder">
+                        Contract Details
+                      </p>
+                      <p className="text-secondary ">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Leo quam dolor nisl donec varius erat nunc mauris. At
+                        quis ipsum integer.
+                      </p>
+                      <Button
+                        className="bigbutton px-3 p-2 rounded-pill"
+                        type="submit"
+                      >
+                        View Contract
+                      </Button>
+                    </Col>
+                    <Col xs={5}>
+                      <img src={Contract} alt="" />
+                    </Col>
+                  </Row>
+                </Card.Body>
+              </Card>
               <Card
                 className="border-0 mb-3 sidebar_profile"
                 style={{

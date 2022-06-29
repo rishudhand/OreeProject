@@ -1,0 +1,11 @@
+@import "../../../Styles/Variables.scss";
+
+.board_invester .nav-link.active {
+    background: #fff !important;
+    
+}
+.board_invester .nav-link{
+    padding: 10px 70px;
+    font-weight: 700;
+    color: $black;
+}

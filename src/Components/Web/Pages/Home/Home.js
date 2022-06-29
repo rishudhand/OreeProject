@@ -27,6 +27,8 @@ import Footer from "../../Layout/Footer";
 import Board from "../../../../Assets/icon/board.png";
 import Post from "../.../../../../../Assets/icon/post.png";
 import Createdeal from "../../Popup/Createdeal.js";
+import Contract from "../../../../Assets/image/contract.png";
+import Largemodal from "../../Popup/Largemodal";
 export default function Home() {
   const [show, setShow] = useState(false);
 
@@ -266,7 +268,7 @@ export default function Home() {
                     </div>
                   </Card.Body>
                   <hr className="m-0" />
-                  <Card.Body className="px-3">
+                  <Card.Body className="px-3 pb-1">
                     <Link
                       to="/fullpost"
                       className="text-decoration-none text-dark"
@@ -298,7 +300,7 @@ export default function Home() {
                       </Col>
                     </Row>
 
-                    <Row className="py-3 align-items-center">
+                    <Row className="pt-3 align-items-center">
                       <Col xs={9}>
                         <div className="d-flex align-items-center">
                           <img src={Done} alt="" />
@@ -612,6 +614,36 @@ export default function Home() {
             <Col md={3}>
               <Card
                 className="border-0 mb-3 sidebar_profile"
+                style={{
+                  backgroundColor: "#ffffff",
+                }}
+              >
+                <Card.Body className="p-2">
+                  <Row className="align-items-center">
+                    <Col xs={7}>
+                      <p className="navyColor h5 font_bolder">
+                        Contract Details
+                      </p>
+                      <p className="text-secondary ">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Leo quam dolor nisl donec varius erat nunc mauris. At
+                        quis ipsum integer.
+                      </p>
+                      <Button
+                        className="bigbutton px-3 p-2 rounded-pill"
+                        type="submit"
+                      >
+                        View Contract
+                      </Button>
+                    </Col>
+                    <Col xs={5}>
+                      <img src={Contract} alt="" />
+                    </Col>
+                  </Row>
+                </Card.Body>
+              </Card>
+              <Card
+                className="border-0 mb-3 sidebar_profile"
                 style={{ background: "#ffffff" }}
               >
                 <p className="font_bolder p-2">People you may know</p>
@@ -769,12 +801,16 @@ export default function Home() {
         <Modallayout show={show} handleChange={handleClose}>
           <Requestinfo />
         </Modallayout>
-        <Modallayout show={moreinfoshow} handleChange={moreinfohandleClose}>
+        <Largemodal show={moreinfoshow} handleChange={moreinfohandleClose}>
           <RequestMoreinfo />
-        </Modallayout>
-        <Modallayout show={createdealshow} handleChange={createdealhandleClose}>
+        </Largemodal>
+        <Largemodal
+          className="createdealmodal"
+          show={createdealshow}
+          handleChange={createdealhandleClose}
+        >
           <Createdeal />
-        </Modallayout>
+        </Largemodal>
       </div>
       <Footer />
     </div>

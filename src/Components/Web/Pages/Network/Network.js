@@ -1359,12 +1359,12 @@ export default function Network() {
                           </p>
                           <Form
                             className="d-flex position-relative border p-1 rounded-pill"
-                            style={{ width: "40%" }}
+                            style={{ width: "28%" }}
                           >
                             <Form.Group>
                               <Form.Control
                                 type="text"
-                                className="border-0"
+                                className="border-0 ms-3"
                                 placeholder="Search here..."
                                 style={{ lineHeight: "35px" }}
                               />
@@ -1645,7 +1645,303 @@ export default function Network() {
                         </Card.Body>
                       </Card>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="second">dhjdkj</Tab.Pane>
+                    <Tab.Pane eventKey="second">
+                      <Card
+                        className="border-0 mb-3"
+                        style={{ background: "#ffffff" }}
+                      >
+                        <Card.Header className=" bg-white align-items-center d-flex justify-content-between">
+                          <p className="text-center text-dark font_bolder m-0 p-2">
+                            1,503 Connections
+                          </p>
+                          <Form
+                            className="d-flex position-relative border p-1 rounded-pill"
+                            style={{ width: "28%" }}
+                          >
+                            <Form.Group>
+                              <Form.Control
+                                type="text"
+                                className="border-0 ms-3"
+                                placeholder="Search here..."
+                                style={{ lineHeight: "35px" }}
+                              />
+                            </Form.Group>
+                            <Button
+                              className="bigbutton position-absolute rounded-circle"
+                              type="submit"
+                              style={{
+                                width: "49px",
+                                height: "49px",
+                                lineHeight: "15px",
+                                right: "2%",
+                              }}
+                            >
+                              <img src={Search} alt="" />
+                            </Button>
+                          </Form>
+                        </Card.Header>
+
+                        <Card.Body className="p-4 py-3">
+                          <div className="d-flex justify-content-between align-items-center ">
+                            <Link
+                              to="/networkprofile"
+                              className="text-decoration-none"
+                            >
+                              <div className="profile_head align-items-center d-flex">
+                                <div
+                                  className="avatar avatar-md position-relative text-center rounded-circle"
+                                  style={{ height: "80px", width: "80px" }}
+                                >
+                                  <img
+                                    src={Victoria}
+                                    class="avatar-img w-100"
+                                  />
+                                </div>
+                                &nbsp;&nbsp;
+                                <p className="font_bolder text-dark">
+                                  Jullia William
+                                  <p className="text-secondary m-0 ">
+                                    Angel Startup
+                                  </p>
+                                </p>
+                              </div>
+                            </Link>
+                            <div className="moreinfo d-flex">
+                              <Button className="bigbutton px-4 border-0 p-2 rounded-pill">
+                                Message
+                              </Button>
+                              <Dropdown className="connection_drop">
+                                <Dropdown.Toggle
+                                  variant="transparent"
+                                  id="dropdown-basic"
+                                >
+                                  <img src={Dott} alt="" />
+                                </Dropdown.Toggle>
+                                <Dropdown.Menu>
+                                  <Dropdown.Item>
+                                    <div className="d-flex">
+                                      <img src={Delete} alt="" />
+                                      &nbsp; Remove Connection
+                                    </div>
+                                  </Dropdown.Item>
+                                </Dropdown.Menu>
+                              </Dropdown>
+                            </div>
+                          </div>
+                        </Card.Body>
+
+                        <hr className="m-0" />
+                        <Card.Body className="p-4 py-3">
+                          <div className="d-flex justify-content-between align-items-center ">
+                            <div className="profile_head align-items-center d-flex">
+                              <div
+                                className="avatar avatar-md position-relative text-center rounded-circle"
+                                style={{ height: "80px", width: "80px" }}
+                              >
+                                <img src={Jullia} class="avatar-img w-100" />
+                              </div>
+                              &nbsp;&nbsp;
+                              <p className="font_bolder">
+                                Jullia William
+                                <p className="text-secondary m-0 ">
+                                  Angel Startup
+                                </p>
+                              </p>
+                            </div>
+
+                            <div className="moreinfo d-flex">
+                              <Button className="bigbutton px-4 border-0 p-2 rounded-pill">
+                                Message
+                              </Button>
+                              <Dropdown className="connection_drop">
+                                <Dropdown.Toggle
+                                  variant="transparent"
+                                  id="dropdown-basic"
+                                >
+                                  <img src={Dott} alt="" />
+                                </Dropdown.Toggle>
+                                <Dropdown.Menu>
+                                  <Dropdown.Item>
+                                    <div className="d-flex">
+                                      <img src={Delete} alt="" />
+                                      &nbsp; Remove Connection
+                                    </div>
+                                  </Dropdown.Item>
+                                </Dropdown.Menu>
+                              </Dropdown>
+                            </div>
+                          </div>
+                        </Card.Body>
+                        <hr className="m-0" />
+                        <Card.Body className="p-4 py-3">
+                          <div className="d-flex justify-content-between align-items-center ">
+                            <div className="profile_head align-items-center d-flex">
+                              <div
+                                className="avatar avatar-md position-relative text-center rounded-circle"
+                                style={{ height: "80px", width: "80px" }}
+                              >
+                                <img src={Jordan} class="avatar-img w-100" />
+                              </div>
+                              &nbsp;&nbsp;
+                              <p className="font_bolder">
+                                Jullia William
+                                <p className="text-secondary m-0 ">
+                                  Angel Startup
+                                </p>
+                              </p>
+                            </div>
+
+                            <div className="moreinfo d-flex">
+                              <Button className="bigbutton px-4 border-0 p-2 rounded-pill">
+                                Message
+                              </Button>
+                              <Dropdown className="connection_drop">
+                                <Dropdown.Toggle
+                                  variant="transparent"
+                                  id="dropdown-basic"
+                                >
+                                  <img src={Dott} alt="" />
+                                </Dropdown.Toggle>
+                                <Dropdown.Menu>
+                                  <Dropdown.Item>
+                                    <div className="d-flex">
+                                      <img src={Delete} alt="" />
+                                      &nbsp; Remove Connection
+                                    </div>
+                                  </Dropdown.Item>
+                                </Dropdown.Menu>
+                              </Dropdown>
+                            </div>
+                          </div>
+                        </Card.Body>
+                        <hr className="m-0" />
+                        <Card.Body className="p-4 py-3">
+                          <div className="d-flex justify-content-between align-items-center ">
+                            <div className="profile_head align-items-center d-flex">
+                              <div
+                                className="avatar avatar-md position-relative text-center rounded-circle"
+                                style={{ height: "80px", width: "80px" }}
+                              >
+                                <img src={Mutualo} class="avatar-img w-100" />
+                              </div>
+                              &nbsp;&nbsp;
+                              <p className="font_bolder">
+                                Jullia William
+                                <p className="text-secondary m-0 ">
+                                  Angel Startup
+                                </p>
+                              </p>
+                            </div>
+
+                            <div className="moreinfo d-flex">
+                              <Button className="bigbutton px-4 border-0 p-2 rounded-pill">
+                                Message
+                              </Button>
+                              <Dropdown className="connection_drop">
+                                <Dropdown.Toggle
+                                  variant="transparent"
+                                  id="dropdown-basic"
+                                >
+                                  <img src={Dott} alt="" />
+                                </Dropdown.Toggle>
+                                <Dropdown.Menu>
+                                  <Dropdown.Item>
+                                    <div className="d-flex">
+                                      <img src={Delete} alt="" />
+                                      &nbsp; Remove Connection
+                                    </div>
+                                  </Dropdown.Item>
+                                </Dropdown.Menu>
+                              </Dropdown>
+                            </div>
+                          </div>
+                        </Card.Body>
+                        <hr className="m-0" />
+                        <Card.Body className="p-4 py-3">
+                          <div className="d-flex justify-content-between align-items-center ">
+                            <div className="profile_head align-items-center d-flex">
+                              <div
+                                className="avatar avatar-md position-relative text-center rounded-circle"
+                                style={{ height: "80px", width: "80px" }}
+                              >
+                                <img src={Mutual} class="avatar-img w-100" />
+                              </div>
+                              &nbsp;&nbsp;
+                              <p className="font_bolder">
+                                Jullia William
+                                <p className="text-secondary m-0 ">
+                                  Angel Startup
+                                </p>
+                              </p>
+                            </div>
+
+                            <div className="moreinfo d-flex">
+                              <Button className="bigbutton px-4 border-0 p-2 rounded-pill">
+                                Message
+                              </Button>
+                              <Dropdown className="connection_drop">
+                                <Dropdown.Toggle
+                                  variant="transparent"
+                                  id="dropdown-basic"
+                                >
+                                  <img src={Dott} alt="" />
+                                </Dropdown.Toggle>
+                                <Dropdown.Menu>
+                                  <Dropdown.Item>
+                                    <div className="d-flex">
+                                      <img src={Delete} alt="" />
+                                      &nbsp; Remove Connection
+                                    </div>
+                                  </Dropdown.Item>
+                                </Dropdown.Menu>
+                              </Dropdown>
+                            </div>
+                          </div>
+                        </Card.Body>
+                        <hr className="m-0" />
+                        <Card.Body className="p-4 py-3">
+                          <div className="d-flex justify-content-between align-items-center ">
+                            <div className="profile_head align-items-center d-flex">
+                              <div
+                                className="avatar avatar-md position-relative text-center rounded-circle"
+                                style={{ height: "80px", width: "80px" }}
+                              >
+                                <img src={Steve} class="avatar-img w-100" />
+                              </div>
+                              &nbsp;&nbsp;
+                              <p className="font_bolder">
+                                Jullia William
+                                <p className="text-secondary m-0 ">
+                                  Angel Startup
+                                </p>
+                              </p>
+                            </div>
+
+                            <div className="moreinfo d-flex">
+                              <Button className="bigbutton px-4 border-0 p-2 rounded-pill">
+                                Message
+                              </Button>
+                              <Dropdown className="connection_drop">
+                                <Dropdown.Toggle
+                                  variant="transparent"
+                                  id="dropdown-basic"
+                                >
+                                  <img src={Dott} alt="" />
+                                </Dropdown.Toggle>
+                                <Dropdown.Menu>
+                                  <Dropdown.Item>
+                                    <div className="d-flex">
+                                      <img src={Delete} alt="" />
+                                      &nbsp; Remove Connection
+                                    </div>
+                                  </Dropdown.Item>
+                                </Dropdown.Menu>
+                              </Dropdown>
+                            </div>
+                          </div>
+                        </Card.Body>
+                      </Card>
+                    </Tab.Pane>
                   </Tab.Content>
                 </div>
               </Col>
