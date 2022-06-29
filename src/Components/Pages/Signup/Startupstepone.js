@@ -13,6 +13,7 @@ import Header from "../../Layout/Header";
 import User from "../../../Assets/icon/user.png";
 import Envelope from "../../../Assets/icon/envelope.png";
 import Lock from "../../../Assets/icon/lock.png";
+import Globe from "../../../Assets/icon/globe.png";
 export default function Startupstepone() {
   const ref = useRef();
   return (
@@ -98,7 +99,46 @@ export default function Startupstepone() {
                             />
                           </div>
                         </Form.Group>
-
+                        <Form.Group className="mb-4" controlId="formBasicEmail">
+                          <div className="d-flex field border rounded-pill p-2 px-4">
+                            <Form.Control
+                              type="date"
+                              name="duedate"
+                              className="border-0"
+                              placeholder="Due date"
+                            />
+                          </div>
+                        </Form.Group>
+                        <Form.Group className="mb-4" controlId="formBasicEmail">
+                          <div className="d-flex field border rounded-pill p-2 px-4">
+                            <img src={Globe} alt="" />
+                            <Form.Control
+                              type="email"
+                              className="border-0 bg-transparent"
+                              placeholder="State"
+                            />
+                          </div>
+                        </Form.Group>
+                        <Form.Group className="mb-4" controlId="formBasicEmail">
+                          <div className="d-flex field border rounded-pill p-2 px-4">
+                            <img src={Globe} alt="" />
+                            <Form.Control
+                              type="email"
+                              className="border-0 bg-transparent"
+                              placeholder="Country"
+                            />
+                          </div>
+                        </Form.Group>
+                        <Form.Group className="mb-4" controlId="formBasicEmail">
+                          <div className="d-flex field border rounded-pill p-2 px-4">
+                            <img src={Globe} alt="" />
+                            <Form.Control
+                              type="email"
+                              className="border-0 bg-transparent"
+                              placeholder="City"
+                            />
+                          </div>
+                        </Form.Group>
                         <Form.Group
                           className="mb-4 field  position-relative "
                           controlId="formBasicPassword"
@@ -109,6 +149,24 @@ export default function Startupstepone() {
                               type="password"
                               className="border-0 bg-transparent"
                               placeholder="Create Password"
+                            />
+
+                            <BsFillEyeSlashFill
+                              className="position-absolute"
+                              style={{ bottom: "18px", right: "30px" }}
+                            />
+                          </div>
+                        </Form.Group>
+                        <Form.Group
+                          className="mb-4 field  position-relative "
+                          controlId="formBasicPassword"
+                        >
+                          <div className="d-flex border rounded-pill p-2 px-4">
+                            <img src={Lock} alt="" />
+                            <Form.Control
+                              type="password"
+                              className="border-0 bg-transparent"
+                              placeholder="Confirm Password"
                             />
 
                             <BsFillEyeSlashFill

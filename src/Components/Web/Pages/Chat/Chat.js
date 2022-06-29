@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../../Layout/Header.scss";
 import Profilebackground from "../../../../Assets/image/profilebackground.jfif";
 import Profile from "../../../../Assets/image/avtar.png";
-import { Col, Button, Row, Card, Form } from "react-bootstrap";
+import { Dropdown, Col, Button, Row, Card, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import User from "../../../../Assets/image/user.png";
 import Done from "../../../../Assets/icon/done.png";
@@ -31,6 +31,7 @@ import Footer from "../../Layout/Footer";
 import Insert from "../../../../Assets/icon/insert.png";
 import Mic from "../../../../Assets/icon/mic.png";
 import Send from "../../../../Assets/icon/send.png";
+import Contract from "../../../../Assets/image/contract.png";
 export default function Chat() {
   const [show, setShow] = useState(false);
 
@@ -57,7 +58,7 @@ export default function Chat() {
                     <Form.Group>
                       <Form.Control
                         type="text"
-                        className="border-0"
+                        className="border-0 ms-3"
                         placeholder="Search here..."
                         style={{ lineHeight: "35px" }}
                       />
@@ -71,7 +72,7 @@ export default function Chat() {
                           height: "49px",
                           lineHeight: "15px",
                           right: "1%",
-                          top: "5%", 
+                          top: "5%",
                         }}
                       >
                         <img src={Search} alt="" />
@@ -258,9 +259,20 @@ export default function Chat() {
                       </div>
 
                       <div className="moreinfo">
-                        <Button className="bg-transparent border-0 ">
-                          <img src={Dott} />
-                        </Button>
+                        <Dropdown>
+                          <Dropdown.Toggle
+                            className="bg-transparent border-0 "
+                            id="dropdown-basic"
+                          >
+                            <img src={Dott} />
+                          </Dropdown.Toggle>
+
+                          <Dropdown.Menu>
+                            <Dropdown.Item>Delete</Dropdown.Item>
+                            <Dropdown.Item>Block User</Dropdown.Item>
+                            <Dropdown.Item>Archive</Dropdown.Item>
+                          </Dropdown.Menu>
+                        </Dropdown>
                       </div>
                     </div>
                   </Card.Body>
@@ -335,7 +347,10 @@ export default function Chat() {
                       </Col>
                     </Row>
                     <div className="d-flex justify-content-between">
-                      <div className="text_field gray_light p-2 w-75  sidebar_profile">
+                      <div
+                        className="text_field gray_light p-2  sidebar_profile"
+                        style={{ width: "75%" }}
+                      >
                         <Form className="position-relative">
                           <Form.Group className="">
                             <Form.Control
@@ -351,7 +366,7 @@ export default function Chat() {
                           />
                         </Form>
                       </div>
-                      <div className="btngroup w-25">
+                      <div className="btngroup buttongroup ">
                         <Button
                           className="bigbutton ms-3 border-0  p-3"
                           type="submit"
@@ -373,6 +388,36 @@ export default function Chat() {
               </div>
             </Col>
             <Col md={3}>
+              <Card
+                className="border-0 mb-3 sidebar_profile"
+                style={{
+                  backgroundColor: "#ffffff",
+                }}
+              >
+                <Card.Body className="p-2">
+                  <Row className="align-items-center">
+                    <Col xs={7}>
+                      <p className="navyColor h5 font_bolder">
+                        Contract Details
+                      </p>
+                      <p className="text-secondary ">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Leo quam dolor nisl donec varius erat nunc mauris. At
+                        quis ipsum integer.
+                      </p>
+                      <Button
+                        className="bigbutton px-3 p-2 rounded-pill"
+                        type="submit"
+                      >
+                        View Contract
+                      </Button>
+                    </Col>
+                    <Col xs={5}>
+                      <img src={Contract} alt="" />
+                    </Col>
+                  </Row>
+                </Card.Body>
+              </Card>
               <Card
                 className="border-0 mb-3 sidebar_profile"
                 style={{

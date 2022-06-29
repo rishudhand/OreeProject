@@ -14,7 +14,7 @@ export default function Createdeal() {
       </Modal.Header>
       <Modal.Body>
         <div className="container">
-          <div className="d-flex align-items-center">
+          {/* <div className="d-flex align-items-center">
             <div
               className="profile_img rounded-circle"
               style={{ width: "60px", height: "60px", margin: "0" }}
@@ -26,7 +26,7 @@ export default function Createdeal() {
               />
             </div>
             <p className="text-dark font_bolder ms-3 h5 mb-0">Shawn Paul</p>
-          </div>
+          </div> */}
           <Form>
             <Row>
               <Col xs={6}>
@@ -43,7 +43,7 @@ export default function Createdeal() {
               </Col>
               <Col xs={6}>
                 <Form.Group className="mb-3">
-                  <Form.Label>Pick Category</Form.Label>
+                  <Form.Label>Select Category</Form.Label>
                   <Form.Select aria-label="Default select example">
                     <option>Business Category</option>
                     <option value="1">One</option>
@@ -104,14 +104,14 @@ export default function Createdeal() {
                     </p>
                   </div>
                 </Form.Group>
-                <Form.Group className="mb-3 text-center">
+                <Form.Group className="mb-3 buttongroup text-center">
                   <Button
-                    className="bg-transparent navyColor font_bold p-2 sidebar_profile"
+                    className="bg-transparent navyColor w-25 font_bold p-2 sidebar_profile"
                     style={{ border: "1px solid #082C50" }}
                   >
                     Cancel
                   </Button>
-                  <Button className="bigbutton ms-2 p-2 font_bold sidebar_profile">
+                  <Button className="bigbutton w-25 ms-2 p-2 font_bold sidebar_profile">
                     Post
                   </Button>
                 </Form.Group>

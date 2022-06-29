@@ -35,6 +35,44 @@ export default function Editprofile() {
                 </div>
               </Form.Group>
 
+              <Form.Group className="mb-4" controlId="formBasicEmail">
+                <div className="field border rounded-pill p-2 px-4">
+                  <Form.Control
+                    type="email"
+                    placeholder="City"
+                    className="border-0"
+                  />
+                </div>
+              </Form.Group>
+              <Form.Group className="mb-4" controlId="formBasicEmail">
+                <div className="field border rounded-pill p-2 px-4">
+                  <Form.Control
+                    type="email"
+                    placeholder="State"
+                    className="border-0"
+                  />
+                </div>
+              </Form.Group>
+              <Form.Group className="mb-4" controlId="formBasicEmail">
+                <div className="field border rounded-pill p-2 px-4">
+                  <Form.Control
+                    type="email"
+                    placeholder="place"
+                    className="border-0"
+                  />
+                </div>
+              </Form.Group>
+              <Form.Group className="mb-4" controlId="formBasicEmail">
+                <div className="field border rounded-pill p-2 px-4">
+                  <Form.Control
+                    type="date"
+                    name="duedate"
+                    className="border-0"
+                    placeholder="Due date"
+                  />
+                </div>
+              </Form.Group>
+
               <Form.Group className="mb-4 field " controlId="formBasicPassword">
                 <div className="d-flex border sidebar_profile p-2 px-4">
                   <Form.Control
