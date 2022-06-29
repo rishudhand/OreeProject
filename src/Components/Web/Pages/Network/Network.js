@@ -73,7 +73,7 @@ export default function Network() {
                     className="border-0 mb-3"
                     style={{ background: "#ffffff" }}
                   >
-                    <Card.Header className="border-0 bg-white align-items-center d-flex justify-content-between">
+                    <Card.Header className="border-0 bg-white p-4 py-2 align-items-center d-flex justify-content-between">
                       <p className="text-center text-dark font_bolder m-0 p-2">
                         Invitations
                       </p>
@@ -1354,29 +1354,30 @@ export default function Network() {
                         style={{ background: "#ffffff" }}
                       >
                         <Card.Header className=" bg-white align-items-center d-flex justify-content-between">
-                          <p className="text-center text-dark font_bolder m-0 p-2">
+                          <p className="text-center text-dark font_bolder m-0 p-2 py-4">
                             1,503 Connections
                           </p>
                           <Form
                             className="d-flex position-relative border p-1 rounded-pill"
-                            style={{ width: "28%" }}
+                            style={{ width: "28%", height: "50px" }}
                           >
                             <Form.Group>
                               <Form.Control
                                 type="text"
                                 className="border-0 ms-3"
                                 placeholder="Search here..."
-                                style={{ lineHeight: "35px" }}
+                                style={{ lineHeight: "23px" }}
                               />
                             </Form.Group>
                             <Button
                               className="bigbutton position-absolute rounded-circle"
                               type="submit"
                               style={{
-                                width: "49px",
-                                height: "49px",
+                                width: "45px",
+                                height: "45px",
                                 lineHeight: "15px",
-                                right: "2%",
+                                right: "1%",
+                                top: "3%",
                               }}
                             >
                               <img src={Search} alt="" />
@@ -1651,29 +1652,30 @@ export default function Network() {
                         style={{ background: "#ffffff" }}
                       >
                         <Card.Header className=" bg-white align-items-center d-flex justify-content-between">
-                          <p className="text-center text-dark font_bolder m-0 p-2">
+                          <p className="text-center text-dark font_bolder m-0 p-2 py-4">
                             1,503 Connections
                           </p>
                           <Form
                             className="d-flex position-relative border p-1 rounded-pill"
-                            style={{ width: "28%" }}
+                            style={{ width: "28%", height: "50px" }}
                           >
                             <Form.Group>
                               <Form.Control
                                 type="text"
                                 className="border-0 ms-3"
                                 placeholder="Search here..."
-                                style={{ lineHeight: "35px" }}
+                                style={{ lineHeight: "23px" }}
                               />
                             </Form.Group>
                             <Button
                               className="bigbutton position-absolute rounded-circle"
                               type="submit"
                               style={{
-                                width: "49px",
-                                height: "49px",
+                                width: "45px",
+                                height: "45px",
                                 lineHeight: "15px",
-                                right: "2%",
+                                right: "1%",
+                                top: "3%",
                               }}
                             >
                               <img src={Search} alt="" />

@@ -111,8 +111,8 @@ export default function Createdeal() {
                   >
                     Cancel
                   </Button>
-                  <Button className="bigbutton w-25 ms-2 p-2 font_bold sidebar_profile">
-                    Post
+                  <Button className="bigbutton w-50 ms-3 p-2 font_bold sidebar_profile">
+                    Create deal
                   </Button>
                 </Form.Group>
               </Col>
