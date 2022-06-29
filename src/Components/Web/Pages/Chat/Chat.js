@@ -53,14 +53,14 @@ export default function Chat() {
                 <div className="profile_detail p-2 bg-white">
                   <Form
                     className="d-flex position-relative border p-1 mb-3 rounded-pill"
-                    style={{ width: "100%" }}
+                    style={{ width: "100%", height: "50px" }}
                   >
                     <Form.Group>
                       <Form.Control
                         type="text"
                         className="border-0 ms-3"
                         placeholder="Search here..."
-                        style={{ lineHeight: "35px" }}
+                        style={{ lineHeight: "23px" }}
                       />
                     </Form.Group>
                     <Link to="/onsearch">
@@ -68,17 +68,18 @@ export default function Chat() {
                         className="bigbutton position-absolute rounded-circle"
                         type="submit"
                         style={{
-                          width: "49px",
-                          height: "49px",
+                          width: "45px",
+                          height: "45px",
                           lineHeight: "15px",
                           right: "1%",
-                          top: "5%",
+                          top: "3%",
                         }}
                       >
                         <img src={Search} alt="" />
                       </Button>
                     </Link>
                   </Form>
+                  <hr />
                   <p className="text-dark font_bolder h4 text-left">
                     Recent chats
                   </p>
@@ -349,7 +350,7 @@ export default function Chat() {
                     <div className="d-flex justify-content-between">
                       <div
                         className="text_field gray_light p-2  sidebar_profile"
-                        style={{ width: "75%" }}
+                        style={{ width: "78%" }}
                       >
                         <Form className="position-relative">
                           <Form.Group className="">
@@ -362,7 +363,7 @@ export default function Chat() {
                           <img
                             src={Insert}
                             className="position-absolute "
-                            style={{ top: "15%", right: "5%", width: "17px" }}
+                            style={{ top: "15%", right: "3%", width: "18px" }}
                           />
                         </Form>
                       </div>

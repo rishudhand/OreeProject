@@ -1254,7 +1254,7 @@ export default function Onsearch() {
                         &nbsp;&nbsp;
                         <p className="font_bolder">
                           Mente John
-                          <p className="text-secondary font_bold m-0 ">
+                          <p className="text-secondary font_bold  ">
                             <img src={Board} alt="" />
                             &nbsp; Board Member
                           </p>

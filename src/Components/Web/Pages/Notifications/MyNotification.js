@@ -63,7 +63,7 @@ export default function MyNotification() {
                       printer took a galley of type and scrambled it to make a
                       type specimen book.
                     </p>
-                    <hr className="m-0" />
+                    <hr className="" />
                     <div className="d-flex font_bold justify-content-between">
                       <p className="text-secondary">My Connections</p>
                       <p className="text-dark">5k+</p>
